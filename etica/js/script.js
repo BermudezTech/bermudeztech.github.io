@@ -38,7 +38,16 @@ function fondoScale(){
 }
 
 function abrirPersonaje(){
-
+	var socrates = document.getElementById("socrates");
+	var platon = document.getElementById("platon");
+	var aristoteles = document.getElementById("aristoteles");
+	var tomasdeaquino = document.getElementById("tomasdeaquino");
+	var kant = document.getElementById("kant");
+	var schopenhauer = document.getElementById("schopenhauer");
+	var nietzsche = document.getElementById("nietzsche");
+	var resumen = document.getElementById("resumen");
+	var titulo = document.getElementById("titulo");
+	var cerrar = document.getElementById("cerrar");
 	switch(this.id){
 		case "socrates":
 			platon.style.visibility = "hidden";
@@ -129,6 +138,16 @@ function abrirPersonaje(){
 }
 
 function cerrarPersonaje(){
+	var socrates = document.getElementById("socrates");
+	var platon = document.getElementById("platon");
+	var aristoteles = document.getElementById("aristoteles");
+	var tomasdeaquino = document.getElementById("tomasdeaquino");
+	var kant = document.getElementById("kant");
+	var schopenhauer = document.getElementById("schopenhauer");
+	var nietzsche = document.getElementById("nietzsche");
+	var resumen = document.getElementById("resumen");
+	var titulo = document.getElementById("titulo");
+	var cerrar = document.getElementById("cerrar");
 	document.getElementById("contenido").style.visibility = "hidden";
 	socrates.style.transform = "translateY(0px) translateX(0px)";
 	platon.style.transform = "translateY(0px) translateX(0px)";
