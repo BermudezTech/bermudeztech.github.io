@@ -243,4 +243,8 @@ function cerrarPersonaje(){
 	this.id = "cerrar";
 }
 
+function eliminarCarga(){
+	document.getElementById("cargando").style.display = "none";
+}
+
 //contenedor.innerHTML = "Hola mundo. Bienvenido.";
