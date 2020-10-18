@@ -2,7 +2,7 @@ var introduccion = document.getElementById("introduccion");
 personajes.addEventListener("click", abrirPersonajes);
 function abrirPersonajes(){
 	$("#contenedor").load("personajes.html");
-	setTimeout('fondoScale()', 100);
+	setTimeout('fondoScale()', 50);
 }
 introduccion.addEventListener("click", abrirIntroduccion);
 function abrirIntroduccion(){
