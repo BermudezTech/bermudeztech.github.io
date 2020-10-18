@@ -247,4 +247,8 @@ function eliminarCarga(){
 	document.getElementById("cargando").style.display = "none";
 }
 
+function eliminarCarga2(){
+	document.getElementById("cargando2").style.display = "none";
+}
+
 //contenedor.innerHTML = "Hola mundo. Bienvenido.";
