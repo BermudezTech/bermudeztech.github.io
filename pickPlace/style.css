@@ -43,7 +43,7 @@ body{
 .hero{
 	width: 100%;
 	height: 400px;
-	background-image: url(IMG_20201105_162225.jpg);
+	background-image: url(compressed/IMG_20201105_162225-min.jpg);
 	background-size: cover;
 	text-align: center;
 }
