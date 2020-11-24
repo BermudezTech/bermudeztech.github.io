@@ -150,4 +150,19 @@ section{
 	.col-2 img{
 		width: 70%;
 	}
+	.header{
+		height: auto;
+		text-align: center;
+		flex-direction: column;
+	}
+	.nav ul{
+		display: flex;
+		justify-content: space-between;
+		width: 300px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	section{
+		padding-top: 70px;
+	}
 }
