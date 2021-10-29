@@ -4,3 +4,15 @@ $lightGreen: #46E352;
 $darkGreen: #347C12;
 
 $bebas: "BebasNeue";
+
+$hdScreen: 1280px;
+$mediumScreen: 900px;
+$tabletScreen: 720px;
+$smallScreen: 500px;
+$smartphoneScreen: 300px;
+
+@mixin mediaQ($maxWidth){
+	@media only screen and (max-width: $maxWidth) {
+		@content;
+	}
+}

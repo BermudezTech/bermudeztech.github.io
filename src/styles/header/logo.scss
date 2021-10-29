@@ -1,5 +1,4 @@
 @import "../setup";
-@import "../_variables";
 
 .bermudez{
     font-family: $bebas;
@@ -35,7 +34,7 @@
     text-align: center;
 }
 
-div{
+.logo{
     width: 132px;
     height: 65px;
     display: grid;

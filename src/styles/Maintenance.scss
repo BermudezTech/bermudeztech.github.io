@@ -1,0 +1,23 @@
+@import "setup";
+
+.maintenance{
+    color: white;
+    width: 80%;
+    margin: auto; 
+    display: flex;
+}
+
+.alertM {
+    font-family: "BebasNeue"; 
+    font-size: 94px;
+    text-align: center;
+}
+
+@include mediaQ($mediumScreen){
+    .maintenance{
+        flex-direction: column;
+    }
+    .alertM {
+        font-size: 40px;
+    }
+}
