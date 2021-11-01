@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../styles/Maintenance.scss';
 
-export default function Logo(){
+export default function Maintenance(){
     return(
         <>
             <div className="maintenance">
