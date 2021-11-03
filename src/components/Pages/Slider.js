@@ -1,33 +1,35 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 
 export default function Slider(){
     let [projectName, setProjectName] = useState("");
     let [imgUrl, setImgUrl] = useState("");
     let [contador, setContador] = useState(0);
-    let sliderImages = [
+    const sliderImages = [
         {projectName:"My first project", imgUrl:"http://lorempixel.com/400/400/nature/1"},
         {projectName:"My second project", imgUrl:"http://lorempixel.com/400/400/nature/2"},
         {projectName:"My third project", imgUrl:"http://lorempixel.com/400/400/nature/3"}];
+
     let changeSlide = (goBack) => {
-        if(contador < sliderImages.length){
-            setProjectName(sliderImages[contador].projectName);
-            setImgUrl(sliderImages[contador].imgUrl);
-            if(goBack && contador > 0){
-                setContador(contador-1);
-            }else if(goBack && contador === 0){
-                setContador(sliderImages.length - 1);
-            }else if(contador+1 === sliderImages.length){
-                setContador(0);
-            }else{
-                setContador(contador+1);
-            }
-        }else{
-            setContador(0);
-        }
-        console.log(contador);
-        //clearTimeout();
+        let projectsNum = sliderImages.length;
+        let provisional;
+        if(goBack) provisional = contador - 1;
+        else provisional = contador + 1;
+        
+        if(provisional === projectsNum) setContador(0);
+        else if(provisional === -1) setContador(projectsNum - 1);
+        else setContador(provisional);
     }
-    //setTimeout(changeSlide, 5000);
+    
+    useEffect(()=>{
+        setProjectName(sliderImages[contador].projectName);
+        setImgUrl(sliderImages[contador].imgUrl);
+
+        let temporizador = setTimeout(changeSlide, 5000);
+        return () => clearTimeout(temporizador);
+
+        // eslint-disable-next-line
+    }, [contador]);
+
     let sliderImage = {
         backgroundImage: `url(${imgUrl})`,
     }
