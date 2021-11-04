@@ -17,7 +17,7 @@
         font-size: 36px;
     }
     p{
-        text-align: center;
+        text-align: left;
     }
     span{
         font-family: $mono;
@@ -37,6 +37,20 @@
             height: 50vh;
             p{
                 margin: 0px;
+                max-width: 350px;
+            }
+            .cursor{
+                animation-name: parpadeo;
+                animation-duration: 1s;
+                animation-iteration-count: infinite;
+            }
+            @keyframes parpadeo {
+                0%{
+                    opacity: 1;
+                }
+                100%{
+                    opacity: 0;
+                }
             }
         }
     }
