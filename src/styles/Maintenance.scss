@@ -1,7 +1,6 @@
 @import "setup";
 
 .maintenance{
-    color: white;
     width: 80%;
     margin: auto; 
     display: flex;
@@ -19,5 +18,17 @@
     }
     .alertM {
         font-size: 40px;
+    }
+}
+
+.dark{
+    .maintenance{
+        color: black;
+    }
+}
+
+.light{
+    .maintenance{
+        color: white;
     }
 }

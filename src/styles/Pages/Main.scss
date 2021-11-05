@@ -4,7 +4,6 @@
     margin-top: 10vh;
     h1{
         font-family: $croboto;
-        color: white;
         font-size: 30px;
         font-weight: 400;
         margin: 0px;
@@ -21,7 +20,6 @@
     }
     span{
         font-family: $mono;
-        color: $lightGreen;
         font-size: 24px;
     }
     .container{
@@ -99,12 +97,11 @@
         width: 70%;
         height: 50px;
         border-radius: 20px;
-        background-image: linear-gradient($lightGreen, $darkGreen);
         display: flex;
         justify-content: center;
         align-items: center;
-        color: white;
         font-family: $roboto;
+        color: white;
         font-size: 24px;
         margin: 5vh auto;
         cursor: pointer;
@@ -128,11 +125,41 @@
                 h1, h2, p{
                     font-size: 25px;
                 }
+                p{
+                    text-align: center;
+                    span{
+                        font-size: 20px;
+                    }
+                }
             }
         }
         .Slider{
             width: 100%;
             height: 40vh;
         }
+    }
+}
+
+.dark{
+    h1, h2{
+        color: white;
+    }
+    span{
+        color: $lightGreen;
+    }
+    button{
+        background-image: linear-gradient($lightGreen, $darkGreen);
+    }
+}
+
+.light{
+    h1, h2{
+        color: black;
+    }
+    span{
+        color: $lightBlue;
+    }
+    button{
+        background-image: linear-gradient($lightBlue, $darkBlue);
     }
 }

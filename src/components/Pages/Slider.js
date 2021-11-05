@@ -5,9 +5,9 @@ export default function Slider(){
     let [imgUrl, setImgUrl] = useState("");
     let [contador, setContador] = useState(0);
     const sliderImages = [
-        {projectName:"My first project", imgUrl:"http://lorempixel.com/400/400/nature/1"},
-        {projectName:"My second project", imgUrl:"http://lorempixel.com/400/400/nature/2"},
-        {projectName:"My third project", imgUrl:"http://lorempixel.com/400/400/nature/3"}];
+        {projectName:"Mi primer proyecto", imgUrl:"http://lorempixel.com/400/400/nature/1"},
+        {projectName:"Mi segundo proyecto", imgUrl:"http://lorempixel.com/400/400/nature/2"},
+        {projectName:"Mi tercer proyecto", imgUrl:"http://lorempixel.com/400/400/nature/3"}];
 
     let changeSlide = (goBack) => {
         let projectsNum = sliderImages.length;

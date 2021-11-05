@@ -1,38 +1,5 @@
 @import "../setup";
 
-.bermudez{
-    font-family: $bebas;
-    font-size: 40px;
-    color: white;
-    margin: 0px;
-    padding: 0px;
-    grid-area: bermudez;
-    max-height: 40px;
-}
-
-.web{
-    font-family: $bebas;
-    font-size: 30px;
-    color: $darkGreen;
-    margin: 0px;
-    padding: 0px;
-    grid-area: web;
-    line-height: 30px;
-    text-align: center;
-    max-height: 30px;
-}
-
-.signs{
-    font-family: $bebas;
-    font-size: 30px;
-    color: $lightGreen;
-    margin: 0px;
-    padding: 0px;
-    max-height: 30px;
-    grid-area: signs;
-    line-height: 30px;
-    text-align: center;
-}
 
 .logo{
     width: 132px;
@@ -41,5 +8,59 @@
     grid-template-columns: "50% 50%";
     grid-template-rows: "40px 30px";
     grid-template-areas: "bermudez bermudez"
-                            "signs web";
+    "signs web";
+    .bermudez{
+        font-family: $bebas;
+        font-size: 40px;
+        margin: 0px;
+        padding: 0px;
+        grid-area: bermudez;
+        max-height: 40px;
+    }
+    
+    .web{
+        font-family: $bebas;
+        font-size: 30px;
+        margin: 0px;
+        padding: 0px;
+        grid-area: web;
+        line-height: 30px;
+        text-align: center;
+        max-height: 30px;
+    }
+    
+    .signs{
+        font-family: $bebas;
+        font-size: 30px;
+        margin: 0px;
+        padding: 0px;
+        max-height: 30px;
+        grid-area: signs;
+        line-height: 30px;
+        text-align: center;
+    }
+}
+
+.logo.dark{
+    .bermudez{
+        color: white;
+    }
+    .web{
+        color: $darkGreen;
+    }
+    .signs{
+        color: $lightGreen;
+    }
+}
+
+.logo.light{
+    .bermudez{
+        color: black;
+    }
+    .web{
+        color: $darkBlue;
+    }
+    .signs{
+        color: $lightBlue;
+    }
 }

@@ -2,14 +2,15 @@ import React, {useEffect, useState} from 'react';
 import '../../styles/Pages/Main.scss';
 import Slider from './Slider';
 
-export default function Main(){
+export default function Main({theme}){
     let [typingText, setTypingText] = useState("");
     let [phraseNumber, setPhraseNumber] = useState(0);
     let [phrasePosition, setPhrasePosition] = useState(0);
     let [tempLetter, setTempLetter] = useState("");
     let phrases = ["Desarrollador FRONTEND", 
                 "Estudiante de ingeniería", 
-                "Desarrollador de software"];
+                "Desarrollador de software",
+                "Creador de contenido"];
 
     let typePhrase = () => {
         if(phrasePosition <= phrases[phraseNumber].length){
@@ -26,7 +27,21 @@ export default function Main(){
                 setPhrasePosition(0);
                 setTempLetter("");
             }
-            setTimeout(changePhrase, 2000);
+            let goBackwards = () => {
+                let time = parseInt(500 / phrasePosition);
+                let position = phrasePosition;
+                console.log(time);
+                let erase = () => {
+                    position = position - 1;
+                    setTypingText(typingText.substring(0, position));
+                }
+                let timer = setInterval(erase, time);
+                setTimeout(() => {
+                    clearInterval(timer);
+                    setTimeout(changePhrase, 500);
+                }, 500);
+            }
+            setTimeout(goBackwards, 3000);
         }
     }
 
@@ -41,7 +56,7 @@ export default function Main(){
 
     return(
         <>
-            <div className="Main">
+            <div className={theme ? "Main dark": "Main light"}>
                 <div className="container">
                     <div className="presentation">
                         <div>

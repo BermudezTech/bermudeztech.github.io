@@ -1,10 +1,10 @@
 import React from 'react';
 import '../../styles/header/logo.scss';
 
-export default function Logo(){
+export default function Logo({theme}){
     return(
         <>
-            <div className="logo">
+            <div className={theme ? 'logo dark' : 'logo light'}>
                 <p className="bermudez">BERMUDEZ</p>
                 <p className="signs">&#60; / &#62;</p>
                 <p className="web">WEB</p>

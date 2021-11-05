@@ -1,0 +1,38 @@
+@import 'styles/setup.scss';
+
+.App{
+    height: 100vh;
+    transition: ease-in 2s;
+}
+
+.themeSelector{
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    background-color: #80808020;
+    position: relative;
+    bottom: 20px;
+    left: 85%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+        width: 30px;
+        height: auto;
+    }
+    &:hover{
+        opacity: 0.8;
+    }
+}
+
+.themeSelector.dark{
+    border: 1px solid $lightGreen;
+}
+
+.themeSelector.light{
+    border: 1px solid $lightBlue;
+    img{
+        filter: invert(1);
+    }
+}
