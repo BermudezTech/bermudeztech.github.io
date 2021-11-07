@@ -2,7 +2,7 @@
 
 .App{
     height: 100vh;
-    transition: ease-in 2s;
+    // transition: ease-in 2s;
 }
 
 .themeSelector{
@@ -10,8 +10,9 @@
     height: 50px;
     border-radius: 100px;
     background-color: #80808020;
-    position: relative;
-    bottom: 20px;
+    backdrop-filter: blur(6px);
+    position: fixed;
+    bottom: 40px;
     left: 85%;
     cursor: pointer;
     display: flex;
@@ -34,5 +35,11 @@
     border: 1px solid $lightBlue;
     img{
         filter: invert(1);
+    }
+}
+
+@include mediaQ($mediumScreen){
+    .App{
+        height: auto;
     }
 }

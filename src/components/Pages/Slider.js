@@ -7,7 +7,8 @@ export default function Slider(){
     const sliderImages = [
         {projectName:"Mi primer proyecto", imgUrl:"http://lorempixel.com/400/400/nature/1"},
         {projectName:"Mi segundo proyecto", imgUrl:"http://lorempixel.com/400/400/nature/2"},
-        {projectName:"Mi tercer proyecto", imgUrl:"http://lorempixel.com/400/400/nature/3"}];
+        {projectName:"Mi tercer proyecto", imgUrl:"http://lorempixel.com/400/400/nature/3"},
+        {projectName:"Mi cuarto proyecto", imgUrl:"http://lorempixel.com/400/400/nature/4"}];
 
     let changeSlide = (goBack) => {
         let projectsNum = sliderImages.length;

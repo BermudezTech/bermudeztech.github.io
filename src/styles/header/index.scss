@@ -1,9 +1,61 @@
+@import '../setup.scss';
+
 .header{
     height: 65px;
     width: 100%;
     max-width: 1000px;
     margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "nav logo social";
+    align-items: center;
+    justify-items: center;
+}
+
+.Social{
+    display: flex;
+    justify-content: space-between;
+    width: 96px;
+    img{
+        cursor: pointer;
+        &:hover{
+            opacity: 0.8;
+        }
+    }
+}
+
+.rightHeader{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    .lang{
+        select{
+            width: 50px;
+            height: 25px;
+            margin-right: 30px;
+            border-radius: 10px;
+            background-color: #80808020;
+            font-size: 14px;
+            font-family: $roboto;
+        }
+    }
+}
+
+.lang.dark{
+    select{
+        border: 1px solid $lightGreen;
+        color: white;
+        option{
+            color: black;
+        }
+    }
+}
+
+.lang.light{
+    select{
+        border: 1px solid $lightBlue;
+        color: black;
+        option{
+            color: black;
+        }
+    }
 }
