@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.e8ca5d53.chunk.css",
-    "main.js": "/static/js/main.aece0fd7.chunk.js",
-    "main.js.map": "/static/js/main.aece0fd7.chunk.js.map",
+    "main.css": "/static/css/main.9c351fde.chunk.css",
+    "main.js": "/static/js/main.f8e5ff19.chunk.js",
+    "main.js.map": "/static/js/main.f8e5ff19.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.efd0f0b2.js",
     "runtime-main.js.map": "/static/js/runtime-main.efd0f0b2.js.map",
     "static/js/2.d289f6a5.chunk.js": "/static/js/2.d289f6a5.chunk.js",
     "static/js/2.d289f6a5.chunk.js.map": "/static/js/2.d289f6a5.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.e8ca5d53.chunk.css.map": "/static/css/main.e8ca5d53.chunk.css.map",
+    "static/css/main.9c351fde.chunk.css.map": "/static/css/main.9c351fde.chunk.css.map",
     "static/js/2.d289f6a5.chunk.js.LICENSE.txt": "/static/js/2.d289f6a5.chunk.js.LICENSE.txt",
     "static/media/Contact.scss": "/static/media/SpaceMono-Regular.ab58bedc.ttf",
     "static/media/github.43b18c8b.svg": "/static/media/github.43b18c8b.svg",
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.efd0f0b2.js",
     "static/js/2.d289f6a5.chunk.js",
-    "static/css/main.e8ca5d53.chunk.css",
-    "static/js/main.aece0fd7.chunk.js"
+    "static/css/main.9c351fde.chunk.css",
+    "static/js/main.f8e5ff19.chunk.js"
   ]
 }
