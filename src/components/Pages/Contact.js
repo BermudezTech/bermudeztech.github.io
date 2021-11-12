@@ -19,7 +19,7 @@ export default function Contact({theme}){
                             <textarea placeholder="Mensaje">
                             </textarea>
                             <span className="nextTextarea">&#62;</span>
-                            <input type="submit"/>
+                            <input type="submit" value="Enviar"/>
                         </form>
                     </div>
                     <div className="info">

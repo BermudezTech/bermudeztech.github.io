@@ -1,13 +1,12 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
-export default function Nav(){
+export default function Nav({theme}){
     return(
-        <>
-            <nav>
-                <p>Link #1</p>
-                <p>Link #2</p>
-                <p>Link #3</p>
-                <p>Link #4</p>
+        <> 
+            <nav className={theme ? "dark": "light"}>
+                <NavLink to="/" className="link">Inicio</NavLink>
+                <NavLink to="/contact" className="link">Contacto</NavLink>
             </nav>
         </>
     )

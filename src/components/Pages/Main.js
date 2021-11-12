@@ -30,7 +30,6 @@ export default function Main({theme}){
             let goBackwards = () => {
                 let time = parseInt(500 / phrasePosition);
                 let position = phrasePosition;
-                console.log(time);
                 let erase = () => {
                     position = position - 1;
                     setTypingText(typingText.substring(0, position));

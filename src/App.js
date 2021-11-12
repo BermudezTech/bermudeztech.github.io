@@ -5,6 +5,7 @@ import Header from './components/Header/Header';
 import Page from './components/Pages/Index';
 import Dark from './img/dark.png';
 import Light from './img/light.png';
+import { HashRouter } from "react-router-dom";
 
 function App() {
   let [theme, setTheme] = useState(true);
@@ -13,8 +14,10 @@ function App() {
   }
   return (
     <div className="App" style={background}>
-      <Header theme={theme}/>
-      <Page theme={theme}/>
+      <HashRouter>
+        <Header theme={theme}/>
+        <Page theme={theme}/>
+      </HashRouter>
       <button className={theme ? "themeSelector dark": "themeSelector light"} 
               onClick={() => setTheme(!theme)}
               title="Modo oscuro / claro">

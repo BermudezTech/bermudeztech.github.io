@@ -28,7 +28,6 @@
             span{
                 position: relative;
                 top: -42px;
-                color: $lightGreen;
                 right: 42%;
                 visibility: hidden;
                 font-weight: bold;
@@ -112,6 +111,9 @@
             input[type=submit]{
                 background-image: linear-gradient($lightGreen, $darkGreen);
             }
+            span{
+                color: $lightGreen;
+            }
         }
         .info{
             border-color: $darkGreen;
@@ -137,6 +139,9 @@
             }
             input[type=submit]{
                 background-image: linear-gradient($lightBlue, $darkBlue);
+            }
+            span{
+                color: $lightBlue;
             }
         }
         .info{

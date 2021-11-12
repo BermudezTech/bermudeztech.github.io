@@ -10,6 +10,14 @@
     grid-template-areas: "nav logo social";
     align-items: center;
     justify-items: center;
+    nav{
+        width: 100%;
+    }
+    .link{
+        font-family: $roboto;
+        text-decoration: none;
+        margin: 0 2%;
+    }
 }
 
 .Social{
@@ -57,5 +65,23 @@
         option{
             color: black;
         }
+    }
+}
+
+nav.light{
+    .link{
+        color: black;
+    }
+    .link.active{
+        color: $lightBlue;
+    }
+}
+
+nav.dark{
+    .link{
+        color: white;
+    }
+    .link.active{
+        color: $lightGreen;
     }
 }
