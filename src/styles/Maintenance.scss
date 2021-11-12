@@ -21,14 +21,10 @@
     }
 }
 
-.dark{
-    .maintenance{
-        color: black;
-    }
+.maintenance.dark{
+    color: white;
 }
 
-.light{
-    .maintenance{
-        color: white;
-    }
+.maintenance.light{
+    color: black;
 }

@@ -1,12 +1,12 @@
 import React from 'react';
 import '../../styles/Maintenance.scss';
 
-export default function Maintenance({theme}){
+export default function Error404({theme}){
     return(
         <>
             <div className={theme ? "maintenance dark": "maintenance light"}>
                 <p className="alertM">⚠️</p>
-                <p className="alertM">Esta web se encuentra en mantenimiento</p>
+                <p className="alertM">Error 404: Ruta no encontrada</p>
             </div>
         </>
     )

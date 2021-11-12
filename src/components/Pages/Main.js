@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react';
+import { NavLink } from 'react-router-dom';
 import '../../styles/Pages/Main.scss';
 import Slider from './Slider';
 
@@ -66,7 +67,9 @@ export default function Main({theme}){
                     </div>
                     <Slider/>
                 </div>
-                <button>Mi trabajo &#62;&#62;</button>
+                <NavLink to="projects" style={{textDecoration: 'none'}}>
+                    <button>Mi trabajo &#62;&#62;</button>
+                </NavLink>
             </div>
         </>
     )

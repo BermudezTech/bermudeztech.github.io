@@ -16,8 +16,12 @@ export default function Social({theme}){
                     </select>
                 </div>
                 <div className={theme ? "Social dark": "Social light"}>
-                    <img src={YouTube} alt="YouTube" style={socialColor}/>
-                    <img src={GitHub} alt="GitHub" style={socialColor}/>
+                    <a href="https://www.youtube.com/channel/UCA_hRDpRJLkSRDA62xKNFaQ" target="_blank" rel="noreferrer">
+                        <img src={YouTube} alt="YouTube" style={socialColor}/>
+                    </a>
+                    <a href="https://github.com/JBermudezG" target="_blank" rel="noreferrer">
+                        <img src={GitHub} alt="GitHub" style={socialColor}/>
+                    </a>
                 </div>
             </div>
         </>
