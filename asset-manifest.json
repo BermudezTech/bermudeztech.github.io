@@ -1,21 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.dae17eb6.chunk.css",
-    "main.js": "/static/js/main.05971e94.chunk.js",
-    "main.js.map": "/static/js/main.05971e94.chunk.js.map",
+    "main.css": "/static/css/main.78a2a92a.chunk.css",
+    "main.js": "/static/js/main.45a04151.chunk.js",
+    "main.js.map": "/static/js/main.45a04151.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.efd0f0b2.js",
     "runtime-main.js.map": "/static/js/runtime-main.efd0f0b2.js.map",
-    "static/js/2.da564214.chunk.js": "/static/js/2.da564214.chunk.js",
-    "static/js/2.da564214.chunk.js.map": "/static/js/2.da564214.chunk.js.map",
+    "static/js/2.a79c4d88.chunk.js": "/static/js/2.a79c4d88.chunk.js",
+    "static/js/2.a79c4d88.chunk.js.map": "/static/js/2.a79c4d88.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.dae17eb6.chunk.css.map": "/static/css/main.dae17eb6.chunk.css.map",
-    "static/js/2.da564214.chunk.js.LICENSE.txt": "/static/js/2.da564214.chunk.js.LICENSE.txt",
-    "static/media/Maintenance.scss": "/static/media/BebasNeue-Regular.9aa03f9d.ttf"
+    "static/css/main.78a2a92a.chunk.css.map": "/static/css/main.78a2a92a.chunk.css.map",
+    "static/js/2.a79c4d88.chunk.js.LICENSE.txt": "/static/js/2.a79c4d88.chunk.js.LICENSE.txt",
+    "static/media/Contact.scss": "/static/media/SpaceMono-Regular.ab58bedc.ttf",
+    "static/media/github.43b18c8b.svg": "/static/media/github.43b18c8b.svg",
+    "static/media/mail.bd7d6562.svg": "/static/media/mail.bd7d6562.svg",
+    "static/media/youtube.214a8194.svg": "/static/media/youtube.214a8194.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.efd0f0b2.js",
-    "static/js/2.da564214.chunk.js",
-    "static/css/main.dae17eb6.chunk.css",
-    "static/js/main.05971e94.chunk.js"
+    "static/js/2.a79c4d88.chunk.js",
+    "static/css/main.78a2a92a.chunk.css",
+    "static/js/main.45a04151.chunk.js"
   ]
 }
