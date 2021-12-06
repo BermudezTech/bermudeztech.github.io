@@ -1,8 +1,8 @@
 @import 'styles/setup.scss';
 
 .App{
-    height: 100vh;
-    // transition: ease-in 2s;
+    min-height: 100vh;
+    max-width: 100%;
 }
 
 .themeSelector{
