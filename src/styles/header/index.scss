@@ -248,7 +248,7 @@ nav.dark{
                 display: block;
                 width: 100%;
                 height: auto;
-                background-color: rgba(0,0,0,.5);
+                background-color: rgba(0,0,0,.8);
                 backdrop-filter: blur(6px);
                 z-index: 2;
                 padding: 0px;
@@ -259,9 +259,6 @@ nav.dark{
                     display: block;
                     height: auto;
                     min-height: 65px;
-                    a{
-                        color: white;
-                    }
                     .icon-arrow-down{
                         border-top-color: white;
                     }
@@ -285,6 +282,7 @@ nav.dark{
                             .sub-menu{
                                 position: initial;
                                 margin-top: 20px 0px;
+                                background-color: rgb(10, 10, 10);
                             }
                         }
                     }
@@ -301,6 +299,12 @@ nav.dark{
                     display: block;
                 }
             }
+        }
+        nav.light .link{
+            color:white;
+        }
+        nav.light .link.active{
+            color: $lightBlue;
         }
     }
 }

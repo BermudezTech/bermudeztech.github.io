@@ -4,6 +4,7 @@ import { Route, Routes } from 'react-router';
 import Main from './Main';
 import Contact from './Contact';
 import Error404 from './Error404';
+import About from './About';
 
 export default function Index({theme}){
     return(
@@ -13,6 +14,7 @@ export default function Index({theme}){
                 <Route exact path="/" element={<Main theme={theme}/>} />
                 <Route exact path="contact"element={<Contact theme={theme}/>}/>
                 <Route exact path="*"element={<Error404 theme={theme}/>}/>
+                <Route exact path="/about" element={<About theme={theme}/>} />
             </Routes>
         </>
     )

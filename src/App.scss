@@ -38,6 +38,20 @@
     }
 }
 
+h1{
+    font-family: $bebas;
+    font-size: 64px;
+    font-weight: 400;
+    margin: 0px;
+    margin-bottom: 20px;
+}
+
+h2{
+    @extend h1;
+    margin-bottom: 0px;
+    font-size: 48px;
+}
+
 @include mediaQ($mediumScreen){
     .App{
         height: auto;

@@ -1,0 +1,58 @@
+@import '../setup.scss';
+
+.About{
+    max-width: 1000px;
+    margin: auto;
+    height: auto;
+    p{
+        font-family: $roboto;
+    }
+    .with-photo{
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        img{
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+    }
+}
+
+.About.dark{
+    h1, h2{
+        color: $lightGreen;
+    }
+    p{
+        color: white;
+    }
+}
+
+.About.light{
+    h1, h2{
+        color: $lightBlue;
+    }
+    p{
+        color: black;
+    }
+}
+
+@include mediaQ($mediumScreen){
+    .About{
+        padding: 0px 20px;
+        box-sizing: border-box;
+        .with-photo{
+            grid-template-columns: 100%;
+            grid-template-rows: auto auto;
+            img{
+                width: 50%;
+            }
+            div:nth-child(1){
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+    h1,h2{
+        text-align: center;
+    }
+}
