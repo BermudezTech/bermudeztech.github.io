@@ -16,6 +16,49 @@
             box-sizing: border-box;
         }
     }
+    .timeline{
+        padding-bottom: 30px;
+        .timelineitem{
+            display: grid;
+            width: 100%;
+            grid-template-columns: calc(50% - 36px) 32px calc(50%);
+            gap: 10px;
+            height: 200px;
+            align-items: center;
+            .bar{
+                justify-self: center;
+                position: relative;
+                z-index: 1;
+                .circle{
+                    
+                    width: 64px;
+                    height: 64px;
+                    border-radius: 100%;
+                    position: absolute;
+                    margin: 0;
+                    left: -27px;
+                    top: calc(50% - 32px);
+                }
+                .line{
+                    background-color: $lightGreen;
+                    width: 10px;
+                    height: 200px;
+                }
+            }
+            h3{
+                font-family: $bebas;
+                font-size: 28px;
+                margin: 0;
+                text-align: center;
+            }
+            h4{
+                font-family: $croboto;
+                font-size: 21px;
+                margin: 0;
+                text-align: center;
+            }
+        }
+    }
 }
 
 .About.dark{
@@ -25,6 +68,19 @@
     p{
         color: white;
     }
+    .timeline{
+        .timelineitem{
+            .bar{
+                .circle{
+                    background-image: linear-gradient($lightGreen, $darkGreen);
+                }
+            }
+            h3, h4{
+                color: white;
+                font-weight: 400;
+            }
+        }
+    }
 }
 
 .About.light{
@@ -33,6 +89,18 @@
     }
     p{
         color: black;
+    }
+    .timeline{
+        .timelineitem{
+            .bar{
+                .circle{
+                    background-image: linear-gradient($lightBlue, $darkBlue);
+                }
+                .line{
+                    background-color: $lightBlue;
+                }
+            }
+        }
     }
 }
 
@@ -54,5 +122,32 @@
     }
     h1,h2{
         text-align: center;
+    }
+}
+
+@include mediaQ($smallScreen){
+    .About{
+        .timeline{
+            .timelineitem{
+                height: 150px;
+                .bar{
+                    .circle{
+                        width: 32px;
+                        height: 32px;
+                        left: -11px;
+                        top: calc(50% - 16px);
+                    }
+                    .line{
+                        height: 150px;
+                    }
+                }
+                h3{
+                    font-size: 21px;
+                }
+                h4{
+                    font-size: 18px;
+                }
+            }
+        }
     }
 }

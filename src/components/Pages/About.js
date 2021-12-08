@@ -3,6 +3,35 @@ import '../../styles/Pages/About.scss';
 import logo from '../../img/logo2.png';
 import Techboard from './Techboard';
 
+function TimeLineItem({date, title, place}){
+    return(
+        <>
+            <div className="timelineitem">
+                <h3>{date}</h3>
+                <div className="bar">
+                    <div className="circle"></div>
+                    <div className="line"></div>
+                </div>
+                <div>
+                    <h3>{title}</h3>
+                    {(place !== "") && <h4>{place}</h4>}
+                </div>
+            </div>
+        </>
+    )
+}
+
+function TimeLine(){
+    return(
+        <>
+            <div className="timeline">
+                <TimeLineItem date="2019" title="Técnico en programación de Software" place="SENA, Colombia"/>
+                <TimeLineItem date="Actualidad" title="Formación autodidacta" place=""/>
+            </div>
+        </>
+    )
+}
+
 export default function About({theme}){
     return (
         <>
@@ -41,6 +70,7 @@ export default function About({theme}){
                     y física como adentrarme en el mundo de la electrónica y la programación.
                 </p>
                 <h2>Educación</h2>
+                <TimeLine />
             </div>
         </> 
     )
