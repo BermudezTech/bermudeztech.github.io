@@ -54,6 +54,11 @@ export default function Main({theme}){
         // eslint-disable-next-line
     }, [phrasePosition]);
 
+    const sliderImages = [
+        {projectName:"Mi primer proyecto", imgUrl:"http://loremflickr.com/400/400/dog/?lock=1"},
+        {projectName:"Mi segundo proyecto", imgUrl:"http://loremflickr.com/400/400/dog/?lock=2"},
+        {projectName:"Mi tercer proyecto", imgUrl:"http://loremflickr.com/400/400/dog/?lock=3"},
+        {projectName:"Mi cuarto proyecto", imgUrl:"http://loremflickr.com/400/400/dog/?lock=4"}];
     return(
         <>
             <div className={theme ? "Main dark": "Main light"}>
@@ -65,10 +70,13 @@ export default function Main({theme}){
                         </div>
                         <p><span><b>Soy:</b> {typingText}<b className="cursor">|</b></span></p>
                     </div>
-                    <Slider/>
+                    <Slider sliderImages={sliderImages} theme={theme}/>
                 </div>
                 <NavLink to="projects" style={{textDecoration: 'none'}}>
-                    <button>Mi trabajo &#62;&#62;</button>
+                    <button>
+                        <p className="btn-logo">&#62;&#62;</p>
+                        <p className="btn-text">Mi trabajo</p>
+                    </button>
                 </NavLink>
             </div>
         </>

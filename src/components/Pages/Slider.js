@@ -1,14 +1,10 @@
 import React, {useState, useEffect} from 'react';
+import '../../styles/Pages/Slider.scss';
 
-export default function Slider(){
+export default function Slider({sliderImages, theme}){
     let [projectName, setProjectName] = useState("");
     let [imgUrl, setImgUrl] = useState("");
     let [contador, setContador] = useState(0);
-    const sliderImages = [
-        {projectName:"Mi primer proyecto", imgUrl:"http://loremflickr.com/400/400/dog/?lock=1"},
-        {projectName:"Mi segundo proyecto", imgUrl:"http://loremflickr.com/400/400/dog/?lock=2"},
-        {projectName:"Mi tercer proyecto", imgUrl:"http://loremflickr.com/400/400/dog/?lock=3"},
-        {projectName:"Mi cuarto proyecto", imgUrl:"http://loremflickr.com/400/400/dog/?lock=4"}];
 
     let changeSlide = (goBack) => {
         let projectsNum = sliderImages.length;
@@ -36,7 +32,7 @@ export default function Slider(){
     }
     return(
         <>
-            <div className="Slider" style={sliderImage}>
+            <div className={theme ? "Slider dark" : "Slider light"} style={sliderImage}>
                 <div></div>
                 <div className="buttons">
                     <span onClick={()=>changeSlide(true)}>&#60;</span>

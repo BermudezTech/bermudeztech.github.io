@@ -1,0 +1,184 @@
+@import '../setup.scss';
+
+::-webkit-scrollbar{
+    width: 10px;
+    display: block;
+    background-color: darkgrey;
+}
+
+::-webkit-scrollbar-track{
+    background-color: darkgrey;
+    border-radius: 7px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgb(90, 90, 90);
+    border-radius: 7px;
+}
+
+.dark::-webkit-scrollbar{
+    width: 10px;
+    display: block;
+    background-color: black;
+}
+
+.dark::-webkit-scrollbar-track{
+    background-color: black;
+    border-radius: 7px;
+}
+
+.dark::-webkit-scrollbar-thumb{
+    background-color: $lightGreen;
+    border-radius: 7px;
+}
+
+.light::-webkit-scrollbar{
+    width: 10px;
+    display: block;
+    background-color: white;
+}
+
+.light::-webkit-scrollbar-track{
+    background-color: white;
+    border-radius: 7px;
+}
+
+.light::-webkit-scrollbar-thumb{
+    background-color: $lightBlue;
+    border-radius: 7px;
+}
+
+.projects{
+    width: 100%;
+    height: 80vh;
+    background-color: rgba(0,0,0,.4);
+    border-radius: 36px;
+    margin: 2vh auto;
+    max-width: 1000px;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: hidden;
+    padding-top: 10px;
+}
+
+.projects-box{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 170px;
+    gap: 20px;
+    position: relative;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding-bottom: 100px;
+    .project{
+        width: 90%;
+        height: 170px;
+        background-size: cover;
+        justify-self: center;
+        cursor: pointer;
+        transition: all .2s ease-in-out;
+        div{
+            width: 100%;
+            height: 30px;
+            background-color: rgba(0,0,0,.4);
+            backdrop-filter: blur(6px);
+            position: relative;
+            top: calc(100% - 30px);
+            display: flex;
+            align-items: center;
+            span{
+                color: white;
+                font-family: $roboto;
+                padding: 0px 10px;
+                box-sizing: border-box;
+            }
+        }
+        &:hover{
+            opacity: .7;
+        }
+    }
+    .project:nth-last-child(1){
+        margin-bottom: 50px;
+    }
+}
+
+.selector{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 40%;
+    margin: 10px auto;
+    background-color: rgba(0,0,0,.5);
+    padding: 6px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    .selectorLink{
+        width: 140px;
+        height: 20px;
+        border-radius: 30px;
+        border: none;
+        color:white;
+        cursor: pointer;
+        font-family: $roboto;
+        text-decoration: none;
+        text-align: center;
+        background-image: linear-gradient($lightGreen, $darkGreen);
+        opacity: .5;
+    }
+    .selectorLink.active{
+        opacity: 1;
+    }
+}
+
+@include mediaQ($hdScreen){
+    .selector{
+        width: 60%;
+        .selectorLink{
+            width: 160px;
+        }
+    }
+}
+
+@include mediaQ($mediumScreen){
+    .projects-box{
+        grid-template-rows: 170px;
+        grid-template-columns: repeat(2, 1fr);
+        .project{
+            width: 95%;
+            height: 170px;
+        }
+    }
+}
+
+@include mediaQ($tabletScreen){
+    .selector{
+        width: 90%;
+        .selectorLink{
+            width: 200px;
+        }
+    }
+}
+
+@include mediaQ(540px){
+    .projects-box{
+        grid-template-columns: 1fr;
+        grid-template-rows: 200px;
+        .project{
+            width: 95%;
+            height: 200px;
+        }
+    }
+}
+
+@include mediaQ($smallScreen){
+    .selector{
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        .selectorLink{
+            width: 90%;
+        }
+    }
+}

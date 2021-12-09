@@ -5,6 +5,8 @@ import Main from './Main';
 import Contact from './Contact';
 import Error404 from './Error404';
 import About from './About';
+import Projects from './Projects';
+import Project from './Project';
 
 export default function Index({theme}){
     return(
@@ -15,6 +17,8 @@ export default function Index({theme}){
                 <Route exact path="contact"element={<Contact theme={theme}/>}/>
                 <Route exact path="*"element={<Error404 theme={theme}/>}/>
                 <Route exact path="/about" element={<About theme={theme}/>} />
+                <Route path="/projects/*" element={<Projects theme={theme}/>} />
+                <Route path="/project/*" element={<Project theme={theme}/>} />
             </Routes>
         </>
     )

@@ -1,0 +1,92 @@
+@import '../setup.scss';
+
+.projectComp{
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: "desc slider"
+                        "desc check";
+    p, ul li{
+        font-family: $roboto;
+        margin: 0;
+    }
+    .Slider{
+        height: 200px;
+    }
+    .webLinks{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+    a img{
+        width: 50px;
+        height: 50px;
+    }
+    a img:hover{
+        opacity: .6;
+    }
+    h3{
+        font-family: $bebas;
+        font-weight: 400;
+        font-size: 30px;
+        text-align: center;
+    }
+    .description{
+        grid-area: desc;
+    }
+    .Slider{
+        grid-area: slider;
+    }
+    .checkLinks{
+        grid-area: check;
+    }
+}
+
+.projectComp.dark{
+    h1,h2,h3, p, ul li{
+        color: white;
+    }
+    a img{
+        filter: invert(1);
+    }
+}
+
+.projectComp.light{
+    h1,h2,h3, p,ul li{
+        color: black;
+    }
+}
+
+@include mediaQ($mediumScreen){
+    .description{
+        width: 80%;
+        margin: auto;
+    }
+}
+
+@include mediaQ($tabletScreen){
+    .projectComp{
+        grid-template-columns: 1fr;
+        grid-template-areas: "slider""desc""check";
+    }
+    .Slider{
+        width: 70%;
+        margin: auto;
+    }
+    .description{
+        width: 90%;
+        margin: auto;
+    }
+}
+
+@include mediaQ($smallScreen){
+    .Slider{
+        width: 90%;
+    }
+    .description{
+        width: 90%;
+    }
+}

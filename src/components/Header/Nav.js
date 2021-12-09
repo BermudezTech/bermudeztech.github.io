@@ -33,13 +33,13 @@ export default function Nav({theme}){
                             </li>
                         </ul>
                     </li>
-                    <li>
+                    {/* <li>
                         <NavLink to="/blog" className="link dropdown-menu" onClick={() => {setActive(false); window.scrollTo(0,0)}}>Blog<i className="icon-arrow-down"></i></NavLink>
                         <ul className="sub-menu">
                             <li><NavLink to="/blog/ingenieria" className="link dropdown-menu" onClick={() => {setActive(false); window.scrollTo(0,0)}}>Ingeniería</NavLink></li>
                             <li><NavLink to="/blog/software" className="link dropdown-menu" onClick={() => {setActive(false); window.scrollTo(0,0)}}>Software</NavLink></li>
                         </ul>
-                    </li>
+                    </li> */}
                     <li className="special"><NavLink to="/about" className="link" onClick={() => {setActive(false); window.scrollTo(0,0)}}>Acerca de</NavLink></li>
                     <li><NavLink to="/contact" className="link" onClick={() => {setActive(false); window.scrollTo(0,0)}}>Contacto</NavLink></li>
                     <div className="social-btn"><Social theme={theme}/></div>
