@@ -1,0 +1,42 @@
+[
+    {
+        "access-point": "frontend/webdesign-realstate",
+        "name": "Realstate design. Figma to HTML",
+        "github-link": "https://github.com/JBermudezG/webdesign/tree/master/realstate",
+        "webpage": "https://bermudezweb.ga/webdesign/realstate",
+        "description": "This is the description of the web page.",
+        "images": [{
+            "imgUrl": "http://loremflickr.com/400/400/dog/?lock=1",
+            "projectName": "This is the main page"
+        },{
+            "imgUrl": "http://loremflickr.com/400/400/dog/?lock=2",
+            "projectName": "This is the second page"
+        },{
+            "imgUrl": "http://loremflickr.com/400/400/dog/?lock=3",
+            "projectName": "This is the third page"
+        },{
+            "imgUrl": "http://loremflickr.com/400/400/dog/?lock=4",
+            "projectName": "This is the fourth page"
+        }]
+    },
+    {
+        "access-point": "web-design/webdesign-realstate",
+        "name": "This is web design project",
+        "github-link": "https://github.com/JBermudezG/webdesign/tree/master/realstate",
+        "webpage": "https://bermudezweb.ga/webdesign/realstate",
+        "description": "This is the description of the web page.",
+        "images": [{
+            "imgUrl": "http://loremflickr.com/400/400/dog/?lock=2",
+            "projectName": "This is the main page"
+        },{
+            "imgUrl": "http://loremflickr.com/400/400/dog/?lock=1",
+            "projectName": "This is the second page"
+        },{
+            "imgUrl": "http://loremflickr.com/400/400/dog/?lock=3",
+            "projectName": "This is the third page"
+        },{
+            "imgUrl": "http://loremflickr.com/400/400/dog/?lock=4",
+            "projectName": "This is the fourth page"
+        }]
+    }
+]
