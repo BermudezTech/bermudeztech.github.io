@@ -72,6 +72,9 @@
     overflow-y: scroll;
     overflow-x: hidden;
     padding-bottom: 100px;
+    a{
+        text-decoration: none;
+    }
     .project{
         width: 90%;
         height: 170px;
@@ -132,6 +135,14 @@
     }
 }
 
+.projects.light{
+    .selector{
+        .selectorLink{
+            background-image: linear-gradient($lightBlue, $darkBlue);
+        }
+    }
+}
+
 @include mediaQ($hdScreen){
     .selector{
         width: 60%;
@@ -148,6 +159,9 @@
         .project{
             width: 95%;
             height: 170px;
+        }
+        .project:nth-last-child(1){
+            margin-bottom: 150px;
         }
     }
 }

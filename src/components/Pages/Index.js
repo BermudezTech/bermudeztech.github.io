@@ -17,8 +17,8 @@ export default function Index({theme}){
                 <Route exact path="contact"element={<Contact theme={theme}/>}/>
                 <Route exact path="*"element={<Error404 theme={theme}/>}/>
                 <Route exact path="/about" element={<About theme={theme}/>} />
-                <Route path="/projects/*" element={<Projects theme={theme}/>} />
-                <Route path="/project/*" element={<Project theme={theme}/>} />
+                <Route path="/projects/:type" element={<Projects theme={theme}/>} />
+                <Route path="/projects/:projecttype/:projectname" element={<Project theme={theme}/>} />
             </Routes>
         </>
     )

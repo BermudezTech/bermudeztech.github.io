@@ -72,7 +72,7 @@ export default function Main({theme}){
                     </div>
                     <Slider sliderImages={sliderImages} theme={theme}/>
                 </div>
-                <NavLink to="projects" style={{textDecoration: 'none'}}>
+                <NavLink to="/projects/web-dev" style={{textDecoration: 'none'}}>
                     <button>
                         <p className="btn-logo">&#62;&#62;</p>
                         <p className="btn-text">Mi trabajo</p>

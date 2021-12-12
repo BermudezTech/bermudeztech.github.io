@@ -19,7 +19,7 @@ export default function Nav({theme}){
                 <ul className="nav-list">
                     <li><NavLink to="/" className="link" onClick={() => {setActive(false); window.scrollTo(0,0)}}>Inicio</NavLink></li>
                     <li>
-                        <NavLink to="/projects" className="link dropdown-menu" onClick={() => {setActive(false); window.scrollTo(0,0)}}>Proyectos<i className="icon-arrow-down"></i></NavLink>
+                        <NavLink to="/projects/web-dev" className="link dropdown-menu" onClick={() => {setActive(false); window.scrollTo(0,0)}}>Proyectos<i className="icon-arrow-down"></i></NavLink>
                         <ul className="sub-menu">
                             <li>
                                 <NavLink to="/projects/web-dev" className="link" onClick={() => {setActive(false); window.scrollTo(0,0)}}>Desarrollo web<i className="icon-arrow-left"></i></NavLink>
