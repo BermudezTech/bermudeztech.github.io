@@ -4,7 +4,7 @@
         "name": "Realstate design. Figma to HTML",
         "github-link": "https://github.com/JBermudezG/webdesign/tree/master/realstate",
         "webpage": "https://bermudezweb.ga/webdesign/realstate",
-        "description": "This is the description of the web page.",
+        "description": "<h2>This is a subtitle</h2><p>Lorem ipsum clare asdfjkdlkdois dlfkjfl</p>",
         "images": [{
             "imgUrl": "http://loremflickr.com/400/400/dog/?lock=1",
             "projectName": "This is the main page"

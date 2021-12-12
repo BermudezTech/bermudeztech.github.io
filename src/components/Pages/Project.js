@@ -21,7 +21,8 @@ export default function Project({theme}){
                     setData(element);
                 }
             });
-        })
+        });
+
     // eslint-disable-next-line
     }, []);
 
@@ -30,7 +31,7 @@ export default function Project({theme}){
             <div className={theme ? "projectComp dark" : "projectComp light"}>
                 <div className="description">
                     <h1>{(data.length !== 0) && data["name"]}</h1>
-                    <p>{(data.length !== 0) && data["description"]}</p>
+                    <div dangerouslySetInnerHTML={{__html: ((data.length !== 0) ? data["description"]: "")}}></div>
                 </div>
                 {(data.length !== 0) && <Slider sliderImages={data["images"]} theme={theme}/>}
                 <div className="checkLinks">
