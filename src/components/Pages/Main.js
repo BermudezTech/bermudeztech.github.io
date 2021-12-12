@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react';
+import { helpHttp } from '../../helpers/helpHttp';
 import { NavLink } from 'react-router-dom';
 import '../../styles/Pages/Main.scss';
 import Slider from './Slider';
@@ -8,6 +9,8 @@ export default function Main({theme}){
     let [phraseNumber, setPhraseNumber] = useState(0);
     let [phrasePosition, setPhrasePosition] = useState(0);
     let [tempLetter, setTempLetter] = useState("");
+    const [data, setData] = useState([]);
+
     let phrases = ["Desarrollador FRONTEND", 
                 "Estudiante de ingeniería", 
                 "Desarrollador de software",
@@ -54,11 +57,15 @@ export default function Main({theme}){
         // eslint-disable-next-line
     }, [phrasePosition]);
 
-    const sliderImages = [
-        {projectName:"Mi primer proyecto", imgUrl:"http://loremflickr.com/400/400/dog/?lock=1"},
-        {projectName:"Mi segundo proyecto", imgUrl:"http://loremflickr.com/400/400/dog/?lock=2"},
-        {projectName:"Mi tercer proyecto", imgUrl:"http://loremflickr.com/400/400/dog/?lock=3"},
-        {projectName:"Mi cuarto proyecto", imgUrl:"http://loremflickr.com/400/400/dog/?lock=4"}];
+    let api = helpHttp();
+    let url = "data/mainSlider.json";
+    useEffect(() =>{
+        api.get(url).then((res) => {
+            setData(res);
+        })
+    // eslint-disable-next-line
+    }, []);
+
     return(
         <>
             <div className={theme ? "Main dark": "Main light"}>
@@ -70,7 +77,7 @@ export default function Main({theme}){
                         </div>
                         <p><span><b>Soy:</b> {typingText}<b className="cursor">|</b></span></p>
                     </div>
-                    <Slider sliderImages={sliderImages} theme={theme}/>
+                    {(data.length !== 0) && <Slider sliderImages={data} theme={theme}/>}
                 </div>
                 <NavLink to="/projects/web-dev" style={{textDecoration: 'none'}}>
                     <button>

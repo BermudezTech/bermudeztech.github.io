@@ -26,7 +26,7 @@
         "webpage": "https://bermudezweb.ga/webdesign/realstate",
         "description": "This is the description of the web page.",
         "images": [{
-            "imgUrl": "http://loremflickr.com/400/400/dog/?lock=2",
+            "imgUrl": "data/img/example.png",
             "projectName": "This is the main page"
         },{
             "imgUrl": "http://loremflickr.com/400/400/dog/?lock=1",
