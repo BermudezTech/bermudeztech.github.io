@@ -1,42 +1,22 @@
 [
     {
-        "access-point": "frontend/webdesign-realstate",
-        "name": "Realstate design. Figma to HTML",
-        "github-link": "https://github.com/JBermudezG/webdesign/tree/master/realstate",
-        "webpage": "https://bermudezweb.ga/webdesign/realstate",
-        "description": "<h2>This is a subtitle</h2><p>Lorem ipsum clare asdfjkdlkdois dlfkjfl</p>",
+        "access-point": "frontend/tvmaze-api",
+        "name": "Interfaz grafica con API de TVMaze",
+        "github-link": "https://github.com/JBermudezG/tvmaze-api",
+        "webpage": "https://bermudezweb.ga/tvmaze-api",
+        "description": "<p>Este proyecto consiste en una interfaz gráfica de React JS haciendo uso de la restAPI de TVMaze. Este proyecto fue desarrollado a través de mi proceso de aprendizaje de React JS y es mi primera aplicación utilizable hecha con este framework de JavaScript. Mediante este puedes buscar shows almacenados en la API de TVMaze.</p><h2>Como funciona...</h2><p>Simplemente debes buscar un show que esté disponible en la API de TVMaze, luego la seleccionas haciendo click en el show del que quieras saber más. Toda la información relacionada a los shows viene de la API de TVMaze y puedes añadir comentarios a cada show. Estos comentarios están almacenados en una base de datos personal y son cargados haciendo uso de una API personalizada en PHP. Todo esto es posible a la propiedad asincrona de JavaScript (AJAX y Fetch API) y por un hook personalizado en React(useFetch).</p><h2>Habilidades aprendidas</h2><ul><li>Principal funcionamiento del framework</li><li>Componentes de clase y componentes funcionales</li><li>Hooks (useState, useEffect y hooks personalizados)</li><li>SASS con React JS</li><li>Animaciones CSS</li><li>Caracteristicas avanzadas de JS (operadores, funciones flecha, destructuración ...)</li><li>Como construir una API con PHP y politica CORS</li><li>Paso de datos y eventos entre componentes</li><li>Deploy de una app de React a Github Pages</li></ul>",
         "images": [{
-            "imgUrl": "http://loremflickr.com/400/400/dog/?lock=1",
-            "projectName": "This is the main page"
+            "imgUrl": "data/img/tvmaze-api/1.png",
+            "projectName": "Esta es la página principal"
         },{
-            "imgUrl": "http://loremflickr.com/400/400/dog/?lock=2",
-            "projectName": "This is the second page"
+            "imgUrl": "data/img/tvmaze-api/2.png",
+            "projectName": "Resultado de la busqueda"
         },{
-            "imgUrl": "http://loremflickr.com/400/400/dog/?lock=3",
-            "projectName": "This is the third page"
+            "imgUrl": "data/img/tvmaze-api/3.png",
+            "projectName": "Información del show seleccionado"
         },{
-            "imgUrl": "http://loremflickr.com/400/400/dog/?lock=4",
-            "projectName": "This is the fourth page"
-        }]
-    },
-    {
-        "access-point": "web-design/webdesign-realstate",
-        "name": "This is web design project",
-        "github-link": "https://github.com/JBermudezG/webdesign/tree/master/realstate",
-        "webpage": "https://bermudezweb.ga/webdesign/realstate",
-        "description": "This is the description of the web page.",
-        "images": [{
-            "imgUrl": "data/img/example.png",
-            "projectName": "This is the main page"
-        },{
-            "imgUrl": "http://loremflickr.com/400/400/dog/?lock=1",
-            "projectName": "This is the second page"
-        },{
-            "imgUrl": "http://loremflickr.com/400/400/dog/?lock=3",
-            "projectName": "This is the third page"
-        },{
-            "imgUrl": "http://loremflickr.com/400/400/dog/?lock=4",
-            "projectName": "This is the fourth page"
+            "imgUrl": "data/img/tvmaze-api/4.png",
+            "projectName": "Sección de comentarios"
         }]
     }
 ]

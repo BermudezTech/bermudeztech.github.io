@@ -36,12 +36,31 @@
     }
     .description{
         grid-area: desc;
+        > div{
+            margin-bottom: 30px;
+        }
     }
     .Slider{
         grid-area: slider;
     }
     .checkLinks{
         grid-area: check;
+    }
+    .modal{
+        .modal-content{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            > div{
+                width: 90%;
+                height: 90%;
+                background-color: black;
+                background-size: contain;
+                background-position-x: center;
+                background-position-y: center;
+                background-repeat: no-repeat;
+            }  
+        } 
     }
 }
 

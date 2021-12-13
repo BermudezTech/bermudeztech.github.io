@@ -1,14 +1,6 @@
 [
     {
-        "imgUrl": "data/img/example.png",
-        "projectName": "This is the main page"
-    },
-    {
-        "imgUrl": "http://loremflickr.com/400/400/dog/?lock=1",
-        "projectName": "This is the second page"
-    },
-    {
-        "imgUrl": "data/img/example.png",
-        "projectName": "This is the third page"
+        "imgUrl": "data/img/tvmaze-api/1.png",
+        "projectName": "Interfaz gráfica de React JS con la restAPI de TVMaze"
     }
 ]

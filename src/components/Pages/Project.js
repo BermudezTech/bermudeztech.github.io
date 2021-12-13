@@ -5,6 +5,7 @@ import Slider from './Slider';
 import GitHub from '../../img/github.svg';
 import Internet from '../../img/internet.svg';
 import { useParams } from 'react-router-dom';
+// import Modal from './Modal';
 
 export default function Project({theme}){
     const [data, setData] = useState([]);
@@ -29,6 +30,7 @@ export default function Project({theme}){
     return(
         <>
             <div className={theme ? "projectComp dark" : "projectComp light"}>
+                {/* <Modal><div style={{backgroundImage: "url(data/img/tvmaze-api/1.png)"}}></div></Modal> */}
                 <div className="description">
                     <h1>{(data.length !== 0) && data["name"]}</h1>
                     <div dangerouslySetInnerHTML={{__html: ((data.length !== 0) ? data["description"]: "")}}></div>
