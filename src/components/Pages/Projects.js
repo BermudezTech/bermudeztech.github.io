@@ -16,12 +16,12 @@ function Project({name, imageUrl}){
     )
 }
 
-export default function Projects({theme}){
+export default function Projects({theme, lang}){
     let [data, setData] = useState([]);
     let { type } = useParams();
    
     let api = helpHttp();
-    let url = "data/projects.json";
+    let url = lang==="es" ? "data/projects.json":"data/projectsEn.json";
 
     useEffect(() =>{
         api.get(url).then((res) => {
@@ -36,13 +36,13 @@ export default function Projects({theme}){
             setData(newData);
         });
     // eslint-disable-next-line
-    }, [type]);
+    }, [type, lang]);
     return(
         <>
             <div className={theme ? "projects dark":"projects light"}>
                 <div className="selector">
                     <NavLink className="selectorLink" to="/projects/frontend">FrontEnd</NavLink>
-                    <NavLink className="selectorLink" to="/projects/web-design">Diseño web</NavLink>
+                    <NavLink className="selectorLink" to="/projects/web-design">{lang==="es"?"Diseño web":"Web design"}</NavLink>
                     <NavLink className="selectorLink" to="/projects/frontend-php">PHP + MySQL</NavLink>
                 </div>
                 <div className={theme ? "projects-box dark":"projects-box light"}>

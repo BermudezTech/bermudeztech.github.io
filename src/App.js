@@ -9,14 +9,15 @@ import { HashRouter } from "react-router-dom";
 
 function App() {
   let [theme, setTheme] = useState(true);
+  let [lang, setLang] = useState("es");
   let background = {
     backgroundImage: `${theme ? 'radial-gradient(#2e4632, #2d2d2d)' : 'radial-gradient(#ffffff, #e3e3e3)'}`
   }
   return (
     <div className="App" style={background}>
       <HashRouter>
-        <Header theme={theme}/>
-        <Page theme={theme}/>
+        <Header theme={theme} lang={lang} setLang={setLang}/>
+        <Page theme={theme} lang={lang}/>
       </HashRouter>
       <button className={theme ? "themeSelector dark": "themeSelector light"} 
               onClick={() => setTheme(!theme)}

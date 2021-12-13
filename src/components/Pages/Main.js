@@ -4,17 +4,21 @@ import { NavLink } from 'react-router-dom';
 import '../../styles/Pages/Main.scss';
 import Slider from './Slider';
 
-export default function Main({theme}){
+export default function Main({theme, lang}){
     let [typingText, setTypingText] = useState("");
     let [phraseNumber, setPhraseNumber] = useState(0);
     let [phrasePosition, setPhrasePosition] = useState(0);
     let [tempLetter, setTempLetter] = useState("");
     const [data, setData] = useState([]);
 
-    let phrases = ["Desarrollador FRONTEND", 
+    let phrases = (lang==="es") ? ["Desarrollador FRONTEND", 
                 "Estudiante de ingeniería", 
                 "Desarrollador de software",
-                "Creador de contenido"];
+                "Creador de contenido"] : 
+                ["FRONTEND Developer", 
+                "Engineering Student", 
+                "Software developer",
+                "Content creator"];
 
     let typePhrase = () => {
         if(phrasePosition <= phrases[phraseNumber].length){
@@ -58,13 +62,14 @@ export default function Main({theme}){
     }, [phrasePosition]);
 
     let api = helpHttp();
-    let url = "data/mainSlider.json";
+    let url = lang==="es"?"data/mainSlider.json":"data/mainSliderEn.json";
     useEffect(() =>{
+        setData([]);
         api.get(url).then((res) => {
             setData(res);
         })
     // eslint-disable-next-line
-    }, []);
+    }, [lang]);
 
     return(
         <>
@@ -72,17 +77,17 @@ export default function Main({theme}){
                 <div className="container">
                     <div className="presentation">
                         <div>
-                            <h1>Hola. Mi nombre es:</h1>
+                            <h1>{lang === "es" ? "Hola. Mi nombre es:" : "Hi. My name is:"}</h1>
                             <h2>JOSÉ EDUARDO BERMÚDEZ GARAVITO</h2>
                         </div>
-                        <p><span><b>Soy:</b> {typingText}<b className="cursor">|</b></span></p>
+                        <p><span><b>{lang === "es" ? "Soy:":"I'm:"}</b> {typingText}<b className="cursor">|</b></span></p>
                     </div>
                     {(data.length !== 0) && <Slider sliderImages={data} theme={theme}/>}
                 </div>
                 <NavLink to="/projects/web-dev" style={{textDecoration: 'none'}}>
                     <button>
                         <p className="btn-logo">&#62;&#62;</p>
-                        <p className="btn-text">Mi trabajo</p>
+                        <p className="btn-text">{lang === "es" ? "Mi trabajo":"My projects"}</p>
                     </button>
                 </NavLink>
             </div>

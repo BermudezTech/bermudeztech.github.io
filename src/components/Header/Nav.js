@@ -4,7 +4,7 @@ import menuBtn from '../../img/three-bars.svg';
 import closeBtn from '../../img/icon-close.svg';
 import Social from './Social';
 
-export default function Nav({theme}){
+export default function Nav({theme, lang}){
     const [active, setActive] = useState(false);
     const toggleActive = () => {
         setActive(!active);
@@ -17,15 +17,15 @@ export default function Nav({theme}){
                     <i className="icon-close"><img src={closeBtn} alt="close-btn"/></i>
                 </div>
                 <ul className="nav-list">
-                    <li><NavLink to="/" className="link" onClick={() => {setActive(false); window.scrollTo(0,0)}}>Inicio</NavLink></li>
+                    <li><NavLink to="/" className="link" onClick={() => {setActive(false); window.scrollTo(0,0)}}>{(lang === "es") ? "Inicio":"Home"}</NavLink></li>
                     <li>
-                        <NavLink to="/projects/web-dev" className="link dropdown-menu" onClick={() => {setActive(false); window.scrollTo(0,0)}}>Proyectos<i className="icon-arrow-down"></i></NavLink>
+                        <NavLink to="/projects/web-dev" className="link dropdown-menu" onClick={() => {setActive(false); window.scrollTo(0,0)}}>{(lang === "es") ? "Proyectos":"Projects"}<i className="icon-arrow-down"></i></NavLink>
                         <ul className="sub-menu">
                             <li>
-                                <NavLink to="/projects/web-dev" className="link" onClick={() => {setActive(false); window.scrollTo(0,0)}}>Desarrollo web<i className="icon-arrow-left"></i></NavLink>
+                                <NavLink to="/projects/web-dev" className="link" onClick={() => {setActive(false); window.scrollTo(0,0)}}>{(lang === "es") ? "Desarrollo web":"Web development"}<i className="icon-arrow-left"></i></NavLink>
                                 <ul className="sub-menu">
                                     <li><NavLink to="/projects/frontend" className="link" onClick={() => {setActive(false); window.scrollTo(0,0)}}>Frontend</NavLink></li>
-                                    <li><NavLink to="/projects/frontend-php" className="link" onClick={() => {setActive(false); window.scrollTo(0,0)}}>PHP y MySQL</NavLink></li>
+                                    <li><NavLink to="/projects/frontend-php" className="link" onClick={() => {setActive(false); window.scrollTo(0,0)}}>PHP {(lang === "es") ? "y":"and"} MySQL</NavLink></li>
                                 </ul>
                             </li>
                             <li>
@@ -40,8 +40,8 @@ export default function Nav({theme}){
                             <li><NavLink to="/blog/software" className="link dropdown-menu" onClick={() => {setActive(false); window.scrollTo(0,0)}}>Software</NavLink></li>
                         </ul>
                     </li> */}
-                    <li className="special"><NavLink to="/about" className="link" onClick={() => {setActive(false); window.scrollTo(0,0)}}>Acerca de</NavLink></li>
-                    <li><NavLink to="/contact" className="link" onClick={() => {setActive(false); window.scrollTo(0,0)}}>Contacto</NavLink></li>
+                    <li className="special"><NavLink to="/about" className="link" onClick={() => {setActive(false); window.scrollTo(0,0)}}>{(lang === "es") ? "Acerca de":"About"}</NavLink></li>
+                    <li><NavLink to="/contact" className="link" onClick={() => {setActive(false); window.scrollTo(0,0)}}>{(lang === "es") ? "Contacto":"Contact"}</NavLink></li>
                     <div className="social-btn"><Social theme={theme}/></div>
                 </ul>
             </nav>

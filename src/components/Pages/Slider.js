@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import '../../styles/Pages/Slider.scss';
+// import Modal from './Modal';
 
 export default function Slider({sliderImages, theme}){
     let [projectName, setProjectName] = useState("");
@@ -33,6 +34,7 @@ export default function Slider({sliderImages, theme}){
     return(
         <>
             <div className={theme ? "Slider dark" : "Slider light"} style={sliderImage}>
+                {/* <Modal><div style={{backgroundImage: `url(${imgUrl})`}}></div></Modal> */}
                 <div></div>
                 <div className="buttons">
                     <span onClick={()=>changeSlide(true)}>&#60;</span>

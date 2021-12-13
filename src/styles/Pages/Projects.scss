@@ -78,7 +78,11 @@
     .project{
         width: 90%;
         height: 170px;
-        background-size: cover;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: black;
+        background-position-x: center;
+        background-position-y: center;
         justify-self: center;
         cursor: pointer;
         transition: all .2s ease-in-out;

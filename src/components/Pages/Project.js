@@ -5,15 +5,14 @@ import Slider from './Slider';
 import GitHub from '../../img/github.svg';
 import Internet from '../../img/internet.svg';
 import { useParams } from 'react-router-dom';
-// import Modal from './Modal';
 
-export default function Project({theme}){
+export default function Project({theme, lang}){
     const [data, setData] = useState([]);
     let {projecttype, projectname} = useParams();
     let accessRoute = `${projecttype}/${projectname}`;
     
     let api = helpHttp();
-    let url = "data/projects.json";
+    let url = lang==="es"?"data/projects.json":"data/projectsEn.json";
     
     useEffect(() =>{
         api.get(url).then((res) => {
@@ -25,19 +24,18 @@ export default function Project({theme}){
         });
 
     // eslint-disable-next-line
-    }, []);
+    }, [lang]);
 
     return(
         <>
             <div className={theme ? "projectComp dark" : "projectComp light"}>
-                {/* <Modal><div style={{backgroundImage: "url(data/img/tvmaze-api/1.png)"}}></div></Modal> */}
                 <div className="description">
                     <h1>{(data.length !== 0) && data["name"]}</h1>
                     <div dangerouslySetInnerHTML={{__html: ((data.length !== 0) ? data["description"]: "")}}></div>
                 </div>
                 {(data.length !== 0) && <Slider sliderImages={data["images"]} theme={theme}/>}
                 <div className="checkLinks">
-                    <h3>Check project in: </h3>
+                    <h3>{lang==="es"?"Revisa el proyecto en:":"Check project in:"} </h3>
                     <div className="webLinks">
                         <a href={(data.length !== 0) ? data["webpage"] : "/"} target="_blank" rel="noreferrer">
                             <img src={Internet} alt="Internet"/>
