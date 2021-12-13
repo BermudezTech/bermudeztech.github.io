@@ -31,6 +31,7 @@ export default function Project({theme, lang}){
             <div className={theme ? "projectComp dark" : "projectComp light"}>
                 <div className="description">
                     <h1>{(data.length !== 0) && data["name"]}</h1>
+                    <div className="technologies">{(data.length !== 0) && data["technologies"].map((e)=> <div key={e}><p>{e}<span></span></p></div>)}</div>
                     <div dangerouslySetInnerHTML={{__html: ((data.length !== 0) ? data["description"]: "")}}></div>
                 </div>
                 {(data.length !== 0) && <Slider sliderImages={data["images"]} theme={theme}/>}

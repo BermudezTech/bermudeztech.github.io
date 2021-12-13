@@ -36,8 +36,32 @@
     }
     .description{
         grid-area: desc;
-        > div{
+        > div:nth-last-child(1){
             margin-bottom: 30px;
+        }
+        .technologies{
+            display: flex;
+            gap: 10px;
+            margin-bottom: 10px;
+            > div{
+                background-image: linear-gradient($lightGreen, $darkGreen);
+                padding: 5px;
+                box-sizing: border-box;
+                border-radius: 5px 15px 15px 5px;
+                font-family: $roboto;
+                p{
+                    display: flex;
+                    gap: 5px;
+                    align-items: center;
+                    span{
+                        width: 10px;
+                        height: 10px;
+                        background-color: #2e4632;
+                        border-radius: 100%;
+                        display: block;
+                    }
+                }
+            }
         }
     }
     .Slider{
@@ -76,6 +100,12 @@
 .projectComp.light{
     h1,h2,h3, p,ul li{
         color: black;
+    }
+    .description .technologies > div{
+        background-image: linear-gradient($lightBlue, $darkBlue);
+        p span{
+            background-color: white;
+        }
     }
 }
 
