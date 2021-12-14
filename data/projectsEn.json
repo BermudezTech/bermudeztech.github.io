@@ -21,5 +21,177 @@
             "imgUrl": "data/img/tvmaze-api/4.png",
             "projectName": "Comments section"
         }]
+    },
+    {
+        "access-point": "frontend/allipingenieria",
+        "name": "Allip ingeniería remaking",
+        "github-link": "https://github.com/JBermudezG/frontend/tree/master/allipingenieria",
+        "webpage": "https://bermudezweb.ga/frontend/allipingenieria",
+        "description": "<p>Simple web page as a proposal for changing an old webpage which is <a href='http://allipingenieria.com.ar/'>http://allipingenieria.com.ar/</a>. It includes a header similar to bootstrap but made from sketch, dropdown menu.</p><br/><p>It has resposive web design and kind of modern looking design according to the previously.</p>",
+        "technologies": [
+            "HTML5", "CSS", "Responsive Web Design"
+        ],
+        "images": [{
+            "imgUrl": "data/img/allipingenieria/1.png",
+            "projectName": "Desktop view"
+        },{
+            "imgUrl": "data/img/allipingenieria/2.png",
+            "projectName": "Tablet view"
+        },{
+            "imgUrl": "data/img/allipingenieria/3.png",
+            "projectName": "Smartphone view"
+        }]
+    },
+    {
+        "access-point": "web-design/realstate",
+        "name": "Figma to HTML. Realstate",
+        "github-link": "https://github.com/JBermudezG/frontend/tree/master/realstate",
+        "webpage": "https://bermudezweb.ga/frontend/realstate",
+            "description": "<p>It's the replication of a Figma design which is available on <a href='https://sleekui.com/resource/flowbase-real-estate-template'>https://sleekui.com/resource/flowbase-real-estate-template</a>. I made it in order to learn how to transform a sketch into a web page as accurate as possible. It's made with simple HTML5 and SCSS (Sass). This webpage has not responsive design and any functionality.</p>",
+        "technologies": [
+            "HTML5", "SCSS"
+        ],
+        "images": [{
+            "imgUrl": "data/img/realstate/1.png",
+            "projectName": "Main view"
+        },{
+            "imgUrl": "data/img/realstate/2.png",
+            "projectName": "Places to live (Grid)"
+        },{
+            "imgUrl": "data/img/realstate/3.png",
+            "projectName": "Figma design"
+        },{
+            "imgUrl": "data/img/realstate/4.png",
+            "projectName": "Complete webpage"
+        }]
+    },
+    {
+        "access-point": "web-design/trafalgar",
+        "name": "Figma to HTML. Trafalgar",
+        "github-link": "https://github.com/JBermudezG/frontend/tree/master/trafalgar",
+        "webpage": "https://bermudezweb.ga/frontend/trafalgar",
+            "description": "<p>It's the replication of a Figma design which is available on <a href='https://sleekui.com/resource/trafalgar-landing-page'>https://sleekui.com/resource/trafalgar-landing-page</a>. I made it in order to learn how to transform a sketch into a web page as accurate as possible. It's made with simple HTML5 and SCSS (Sass). This webpage has not responsive design and any functionality.</p>",
+        "technologies": [
+            "HTML5", "SCSS"
+        ],
+        "images": [{
+            "imgUrl": "data/img/trafalgar/1.png",
+            "projectName": "Main view"
+        },{
+            "imgUrl": "data/img/trafalgar/2.png",
+            "projectName": "Services (Grid)"
+        },{
+            "imgUrl": "data/img/trafalgar/3.png",
+            "projectName": "Figma design"
+        },{
+            "imgUrl": "data/img/trafalgar/4.png",
+            "projectName": "Complete webpage"
+        }]
+    },
+    {
+        "access-point": "frontend/eticaSegunFilosofos",
+        "name": "Interactive board. Ethics according to philosophers",
+        "github-link": "https://github.com/JBermudezG/frontend/tree/master/eticaSegunFilosofos",
+        "webpage": "https://bermudezweb.ga/frontend/eticaSegunFilosofos",
+        "description": "<p>It's a interactive board made with JS and JQuery, allows you to know about the proposals of each one of them, it has animations, modal windows inside. The writting part of each philosopher it's stored on a HTML file different from the starter one. Thanks to JavaScript they are loaded into the DOM and get organized through CSS.</p>",
+        "technologies": [
+            "HTML5", "CSS", "JavaScript", "JQuery"
+        ],
+        "images": [{
+            "imgUrl": "data/img/eticaSegunFilosofos/1.png",
+            "projectName": "Philosophers board"
+        },{
+            "imgUrl": "data/img/eticaSegunFilosofos/2.png",
+            "projectName": "App main window"
+        },{
+            "imgUrl": "data/img/eticaSegunFilosofos/3.png",
+            "projectName": "Philosopher's thinking information"
+        }]
+    },
+    {
+        "access-point": "frontend/folletos",
+        "name": "Interactive brochure",
+        "github-link": "https://github.com/JBermudezG/frontend/tree/master/folletos",
+        "webpage": "https://bermudezweb.ga/frontend/folletos/travelGuru",
+        "description": "<p>It consists in an interactive brochure, it has modal windows, attractive images. It's an informative modern brochure with interesting design for presentations.</p>",
+        "technologies": [
+            "HTML5", "CSS", "JavaScript"
+        ],
+        "images": [{
+            "imgUrl": "data/img/folletos/1.png",
+            "projectName": "Brochure main view"
+        },{
+            "imgUrl": "data/img/folletos/2.png",
+            "projectName": "Modal windows"
+        },{
+            "imgUrl": "data/img/folletos/3.png",
+            "projectName": "Second part of the Travel Guru"
+        },{
+            "imgUrl": "data/img/folletos/4.png",
+            "projectName": "First part China brochure"
+        },{
+            "imgUrl": "data/img/folletos/5.png",
+            "projectName": "Second part China brochure"
+        }]
+    },
+    {
+        "access-point": "frontend/lineaTiempo",
+        "name": "Linea del tiempo",
+        "github-link": "https://github.com/JBermudezG/frontend/tree/master/lineaTiempo",
+        "webpage": "https://bermudezweb.ga/frontend/lineaTiempo",
+        "description": "<p>It's a time line, the elements are loaded into the DOM with a JavaScript function. It tries to follow a component methodology in which each of the elements of the time line are created from just one component and the characteristics are given by the parameters of the function. When the function is executed the elements are loaded into the DOM with the given characteristics. It has an attractive and organized design</p>",
+        "technologies": [
+            "HTML5", "CSS", "JavaScript"
+        ],
+        "images": [{
+            "imgUrl": "data/img/lineaTiempo/1.png",
+            "projectName": "Beginning of the timeline"
+        },{
+            "imgUrl": "data/img/lineaTiempo/2.png",
+            "projectName": "More elements"
+        },{
+            "imgUrl": "data/img/lineaTiempo/3.png",
+            "projectName": "More elements"
+        }]
+    },
+    {
+        "access-point": "frontend/singlePageLabInform",
+        "name": "Lab inform. Single page application.",
+        "github-link": "https://github.com/JBermudezG/frontend/tree/master/singlePageLabInform",
+        "webpage": "https://bermudezweb.ga/frontend/singlePageLabInform",
+        "description": "<p>It's a lab inform, it is made similar to a single page application (it dynamically interacts with the user using the information of the server). It's a webpage for presentation which has a navigation menu. The elements which are shown depends on the tab which is currently selected. The other elements are just hidden. This is possible thanks to the DOM manipulation with JavaScript. This allows all the elements to load at the start and no reloading the webpage. The advantage is that the navigation menu and the background keep always visible.</p>",
+        "technologies": [
+            "HTML5", "CSS", "JavaScript"
+        ],
+        "images": [{
+            "imgUrl": "data/img/singlePageLabInform/1.png",
+            "projectName": "Home tab"
+        },{
+            "imgUrl": "data/img/singlePageLabInform/2.png",
+            "projectName": "Abstract tab"
+        },{
+            "imgUrl": "data/img/singlePageLabInform/3.png",
+            "projectName": "Variables tab"
+        }]
+    },
+    {
+        "access-point": "frontend/turisticWays",
+        "name": "Turistic ways. Download page of a mobile app",
+        "github-link": "https://github.com/JBermudezG/frontend/tree/master/turisticWays",
+        "webpage": "https://bermudezweb.ga/frontend/turisticWays",
+        "description": "<p>This is the webpage for download a mobile application, it was my first approach to the web development. It's basically an informative webpage very simple design which shows the description of the mobile application, its logo and some screenshots of it. It can be found in English and Spanish.</p>",
+        "technologies": [
+            "HTML5", "CSS"
+        ],
+        "images": [{
+            "imgUrl": "data/img/turisticWays/1.png",
+            "projectName": "Home page"
+        },{
+            "imgUrl": "data/img/turisticWays/2.png",
+            "projectName": "Spanish download page"
+        },{
+            "imgUrl": "data/img/turisticWays/3.png",
+            "projectName": "English download page"
+        }]
     }
 ]

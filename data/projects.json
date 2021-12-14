@@ -21,5 +21,177 @@
             "imgUrl": "data/img/tvmaze-api/4.png",
             "projectName": "Sección de comentarios"
         }]
+    },
+    {
+        "access-point": "frontend/allipingenieria",
+        "name": "Renovación allip ingeniería",
+        "github-link": "https://github.com/JBermudezG/frontend/tree/master/allipingenieria",
+        "webpage": "https://bermudezweb.ga/frontend/allipingenieria",
+        "description": "<p>Consiste en una simple web como propuesta de rediseño de la página allipingeniería que originalmente es ésta: <a href='http://allipingenieria.com.ar/'>http://allipingenieria.com.ar/</a>. Incluye un header o encabezado similar al de bootstrap pero esta hecho desde cero, y también cuenta con un menú desplegable.</p><br/><p>Cuenta con responsive design y un diseño un diseño moderno con respecto al que había anteriormente.</p>",
+        "technologies": [
+            "HTML5", "CSS", "Responsive Web Design"
+        ],
+        "images": [{
+            "imgUrl": "data/img/allipingenieria/1.png",
+            "projectName": "Vista de escritorio"
+        },{
+            "imgUrl": "data/img/allipingenieria/2.png",
+            "projectName": "Vista de tablet"
+        },{
+            "imgUrl": "data/img/allipingenieria/3.png",
+            "projectName": "Vista de Smartphone"
+        }]
+    },
+    {
+        "access-point": "web-design/realstate",
+        "name": "Figma a HTML. Realstate",
+        "github-link": "https://github.com/JBermudezG/frontend/tree/master/realstate",
+        "webpage": "https://bermudezweb.ga/frontend/realstate",
+        "description": "<p>Es la réplica de un sitio web cuyo diseño fue hecho inicialmente en figma. El diseño está disponible en <a href='https://sleekui.com/resource/flowbase-real-estate-template'>https://sleekui.com/resource/flowbase-real-estate-template</a>. Este fue realizado para entender el proceso de transformar de un diseño en figma a una página web tan presiso como fuera posible. Está hecho con HTML5 y SCSS (Sass). No cuenta con diseño responsive ni tiene ninguna funcionalidad.</p>",
+        "technologies": [
+            "HTML5", "SCSS"
+        ],
+        "images": [{
+            "imgUrl": "data/img/realstate/1.png",
+            "projectName": "Vista principal"
+        },{
+            "imgUrl": "data/img/realstate/2.png",
+            "projectName": "Lugares para vivir (Grid)"
+        },{
+            "imgUrl": "data/img/realstate/3.png",
+            "projectName": "Diseño de figma"
+        },{
+            "imgUrl": "data/img/realstate/4.png",
+            "projectName": "Página completa"
+        }]
+    },
+    {
+        "access-point": "web-design/trafalgar",
+        "name": "Figma a HTML. Trafalgar",
+        "github-link": "https://github.com/JBermudezG/frontend/tree/master/trafalgar",
+        "webpage": "https://bermudezweb.ga/frontend/trafalgar",
+        "description": "<p>Es la réplica de un sitio web cuyo diseño fue hecho inicialmente en figma. El diseño está disponible en <a href='https://sleekui.com/resource/trafalgar-landing-page'>https://sleekui.com/resource/trafalgar-landing-page</a>. Este fue realizado para entender el proceso de transformar de un diseño en figma a una página web tan presiso como fuera posible. Está hecho con HTML5 y SCSS (Sass). No cuenta con diseño responsive ni tiene ninguna funcionalidad.</p>",
+        "technologies": [
+            "HTML5", "SCSS"
+        ],
+        "images": [{
+            "imgUrl": "data/img/trafalgar/1.png",
+            "projectName": "Vista principal"
+        },{
+            "imgUrl": "data/img/trafalgar/2.png",
+            "projectName": "Servicios (Grid)"
+        },{
+            "imgUrl": "data/img/trafalgar/3.png",
+            "projectName": "Diseño de figma"
+        },{
+            "imgUrl": "data/img/trafalgar/4.png",
+            "projectName": "Página completa"
+        }]
+    },
+    {
+        "access-point": "frontend/eticaSegunFilosofos",
+        "name": "Tablón interactivo. Ética según Filosofos",
+        "github-link": "https://github.com/JBermudezG/frontend/tree/master/eticaSegunFilosofos",
+        "webpage": "https://bermudezweb.ga/frontend/eticaSegunFilosofos",
+        "description": "<p>Consiste en un tablón interactivo hecho con JS y JQuery, permite la visualización de los postulados de cada filósofo, cuenta con animaciones, ventanas modales dentro del tablón. Los escritos sobre cada filósofo se encuentran cargados en archivos HTML aparte al inicial. Gracias a JavaScript son cargados dentro del DOM y organizados a través del CSS.</p>",
+        "technologies": [
+            "HTML5", "CSS", "JavaScript", "JQuery"
+        ],
+        "images": [{
+            "imgUrl": "data/img/eticaSegunFilosofos/1.png",
+            "projectName": "Tablón de filósofos"
+        },{
+            "imgUrl": "data/img/eticaSegunFilosofos/2.png",
+            "projectName": "Ventana principal de la aplicación"
+        },{
+            "imgUrl": "data/img/eticaSegunFilosofos/3.png",
+            "projectName": "Información pensamiento filósofo"
+        }]
+    },
+    {
+        "access-point": "frontend/folletos",
+        "name": "Brochure interactivo",
+        "github-link": "https://github.com/JBermudezG/frontend/tree/master/folletos",
+        "webpage": "https://bermudezweb.ga/frontend/folletos/travelGuru",
+        "description": "<p>Consiste en un brochure interactivo, cuenta con ventanas modales, imagenes atractivas. Es un brochure informativo moderno y con diseño interesante para presentaciones.</p>",
+        "technologies": [
+            "HTML5", "CSS", "JavaScript"
+        ],
+        "images": [{
+            "imgUrl": "data/img/folletos/1.png",
+            "projectName": "Muestra principal folleto"
+        },{
+            "imgUrl": "data/img/folletos/2.png",
+            "projectName": "Ventanas modales"
+        },{
+            "imgUrl": "data/img/folletos/3.png",
+            "projectName": "Segunda cara folleto Travel Guru"
+        },{
+            "imgUrl": "data/img/folletos/4.png",
+            "projectName": "Primera cara brochure China"
+        },{
+            "imgUrl": "data/img/folletos/5.png",
+            "projectName": "Segunda cara brochure China"
+        }]
+    },
+    {
+        "access-point": "frontend/lineaTiempo",
+        "name": "Linea del tiempo",
+        "github-link": "https://github.com/JBermudezG/frontend/tree/master/lineaTiempo",
+        "webpage": "https://bermudezweb.ga/frontend/lineaTiempo",
+        "description": "<p>Consiste en una linea del tiempo cuyos elementos son ingresados al DOM a través de una función de JavaScript. Trata de llevar una metodología de componentes en donde cada elemento de la linea del tiempo corresponde a un solo componente y sus características son dadas a través de los parametros de una función. Al ejecutarse la función los elementos son cargados en el DOM con las características proporcionadas. Cuenta con un diseño atractivo y organizado.</p>",
+        "technologies": [
+            "HTML5", "CSS", "JavaScript"
+        ],
+        "images": [{
+            "imgUrl": "data/img/lineaTiempo/1.png",
+            "projectName": "Inicio linea del tiempo"
+        },{
+            "imgUrl": "data/img/lineaTiempo/2.png",
+            "projectName": "Otros elementos"
+        },{
+            "imgUrl": "data/img/lineaTiempo/3.png",
+            "projectName": "Otros elementos"
+        }]
+    },
+    {
+        "access-point": "frontend/singlePageLabInform",
+        "name": "Informe de laboratorio. Single page application.",
+        "github-link": "https://github.com/JBermudezG/frontend/tree/master/singlePageLabInform",
+        "webpage": "https://bermudezweb.ga/frontend/singlePageLabInform",
+        "description": "<p>Trata de un informe de laboratorio en algo parecido a una single page application (interactua con el usuario dinámicamente trayendo la información del servidor). Consiste en una web para presentación que tiene un menú de navegación. Los elementos que se muestran depende de la pestaña de navegación en la que se encuentre. Los demás elementos simplemente son ocultados. Esto es posible gracias a la manipulación del DOM con JavaScript. Esto es para que todos los elementos sean cargados al inicio y la página no se recargue al cambiar de pestaña. La ventaja es que el menú de navegación y el fondo permanecen siempre visibles.</p>",
+        "technologies": [
+            "HTML5", "CSS", "JavaScript"
+        ],
+        "images": [{
+            "imgUrl": "data/img/singlePageLabInform/1.png",
+            "projectName": "Pestaña inicio"
+        },{
+            "imgUrl": "data/img/singlePageLabInform/2.png",
+            "projectName": "Pestaña abstract"
+        },{
+            "imgUrl": "data/img/singlePageLabInform/3.png",
+            "projectName": "Pestaña variables"
+        }]
+    },
+    {
+        "access-point": "frontend/turisticWays",
+        "name": "Turistic ways. Página descarga aplicación movil",
+        "github-link": "https://github.com/JBermudezG/frontend/tree/master/turisticWays",
+        "webpage": "https://bermudezweb.ga/frontend/turisticWays",
+        "description": "<p>Esta página web para la descarga de una aplicación movil, fue mi primer acercamiento con el desarrollo web. Consiste simplemente en una web informativa bastante simple que muestra una descripción de la aplicación movil, su logo y algunas capturas de pantalla de la misma. Se encuentra tanto en inglés como en español.</p>",
+        "technologies": [
+            "HTML5", "CSS"
+        ],
+        "images": [{
+            "imgUrl": "data/img/turisticWays/1.png",
+            "projectName": "Página inicial"
+        },{
+            "imgUrl": "data/img/turisticWays/2.png",
+            "projectName": "Página de descarga español"
+        },{
+            "imgUrl": "data/img/turisticWays/3.png",
+            "projectName": "Página de descarga ingles"
+        }]
     }
 ]
