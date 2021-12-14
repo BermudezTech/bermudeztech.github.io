@@ -41,9 +41,9 @@ export default function Project({theme, lang}){
                         <a href={(data.length !== 0) ? data["webpage"] : "/"} target="_blank" rel="noreferrer">
                             <img src={Internet} alt="Internet"/>
                         </a>
-                        <a href={(data.length !== 0) ? data["github-link"] : "/"} target="_blank" rel="noreferrer">
-                            <img src={GitHub} alt="GitHub"/>
-                        </a>
+                        {(data.length !== 0 && data["github-link"] !== "") ? 
+                        <a href={(data.length !== 0) ? data["github-link"] : "/"} target="_blank" rel="noreferrer"><img src={GitHub} alt="GitHub"/></a>
+                        : ""}
                     </div>
                 </div>
             </div>

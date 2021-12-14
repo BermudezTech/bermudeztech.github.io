@@ -89,7 +89,7 @@
 }
 
 .projectComp.dark{
-    h1,h2,h3, p, ul li{
+    h1,h2,h3, p, ul li, a{
         color: white;
     }
     a img{
@@ -98,7 +98,7 @@
 }
 
 .projectComp.light{
-    h1,h2,h3, p,ul li{
+    h1,h2,h3, p,ul li, a{
         color: black;
     }
     .description .technologies > div{

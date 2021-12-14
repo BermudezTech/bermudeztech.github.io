@@ -32,9 +32,9 @@
             display: flex;
             align-items: center;
             padding: 0;
-            gap: 5px;
             width: 90%;
-            justify-content: space-between;
+            justify-content: flex-start;
+            gap: 20px;
             height: inherit;
             .social-btn{
                 display: none;
@@ -262,6 +262,17 @@ nav.dark{
                 margin: 0px;
                 padding-bottom: 30px;
                 padding-top: 20px;
+                animation: openNav 400ms;
+                @keyframes openNav {
+                    0%{
+                        opacity: 0;
+                        filter: blur(10px);
+                    }
+                    80%{
+                        opacity: 1;
+                        filter: blur(0);
+                    }
+                }
                 li{
                     display: block;
                     height: auto;

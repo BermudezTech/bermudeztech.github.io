@@ -28,9 +28,9 @@ export default function Nav({theme, lang}){
                                     <li><NavLink to="/projects/frontend-php" className="link" onClick={() => {setActive(false); window.scrollTo(0,0)}}>PHP {(lang === "es") ? "y":"and"} MySQL</NavLink></li>
                                 </ul>
                             </li>
-                            <li>
+                            {/* <li>
                                 <NavLink to="/youtube-channel" className="link" onClick={() => {setActive(false); window.scrollTo(0,0)}}>BermúdezWeb YT</NavLink>
-                            </li>
+                            </li> */}
                         </ul>
                     </li>
                     {/* <li>
@@ -41,7 +41,7 @@ export default function Nav({theme, lang}){
                         </ul>
                     </li> */}
                     <li className="special"><NavLink to="/about" className="link" onClick={() => {setActive(false); window.scrollTo(0,0)}}>{(lang === "es") ? "Acerca de":"About"}</NavLink></li>
-                    <li><NavLink to="/contact" className="link" onClick={() => {setActive(false); window.scrollTo(0,0)}}>{(lang === "es") ? "Contacto":"Contact"}</NavLink></li>
+                    {/* <li><NavLink to="/contact" className="link" onClick={() => {setActive(false); window.scrollTo(0,0)}}>{(lang === "es") ? "Contacto":"Contact"}</NavLink></li> */}
                     <div className="social-btn"><Social theme={theme}/></div>
                 </ul>
             </nav>
