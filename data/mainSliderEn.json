@@ -2,5 +2,14 @@
     {
         "imgUrl": "data/img/tvmaze-api/1.png",
         "projectName": "Graphical interface of React JS with the restApi of TVMaze"
+    },
+    {
+        "imgUrl": "data/img/realstate/1.png",
+        "projectName": "Figma to React. Realstate"
+    }
+    ,
+    {
+        "imgUrl": "data/img/proyectapp/1.png",
+        "projectName": "Proyectapp. Financial blog"
     }
 ]
