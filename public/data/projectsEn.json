@@ -193,5 +193,71 @@
             "imgUrl": "data/img/turisticWays/3.png",
             "projectName": "English download page"
         }]
+    },
+    {
+        "access-point": "frontend-php/proyectapp",
+        "name": "Proyectapp. Financial blog",
+        "github-link": "",
+        "webpage": "http://bermudezwebhost.ga/proyectapp",
+        "description": "<p>This website is thinked as a financial blog. It allows the creation of blog entries, make comments to each entry, make financial maths and a contact form. <h2>Tabs</h2></p><ul><li><b>Home</b></li><li><b>Blog: </b>It allows to show the recent blog entries. On login you can add new entries in this same section. When you click on any of the blogs, it goes to the entire blog and the comments section.</li><li><b>Proyecciones (projections)</b></li><li><b>Sobre nosotros (About us): </b>It tells about the project, its mision and vision.</li><li><b>Contactenos (Contact us): </b>There is a contact form. This data is sent to a database. When you login, you can check this information</li></ul></p><h2>Demo</h2><p>To login you can use the next information:</p><br/><p>User: admin</p><p>Password: admin123</p>",
+        "technologies": [
+            "HTML5", "CSS", "JavaScript", "PHP", "Bootstrap 5", "Responsive Web Design"
+        ],
+        "images": [{
+            "imgUrl": "data/img/proyectapp/1.png",
+            "projectName": "Main page"
+        },{
+            "imgUrl": "data/img/proyectapp/2.png",
+            "projectName": "Blogs"
+        },{
+            "imgUrl": "data/img/proyectapp/3.png",
+            "projectName": "Blog entry"
+        },{
+            "imgUrl": "data/img/proyectapp/4.png",
+            "projectName": "New blog entry"
+        }]
+    },
+    {
+        "access-point": "frontend-php/smartShoppingCard",
+        "name": "Smart Shopping Card Application",
+        "github-link": "",
+        "webpage": "http://bermudezwebhost.ga/smartShoppingCard",
+        "description": "<p>Application for the use of a card in a educative environment (stationery shop and coffee shop). It works as a debit card which can be recharged and it's to buy things.</p><h2>How it works...</h2><p>This depends on the rol of each user.</p><br/><h3>Administrator</h3><ul><li>Database administration, user creation, products, finances. </li><li>Card chip assignment</li><li>Check shopping history</li><li>Recharge card</li></ul><h3>Seller</h3><p>Each seller belongs to a specific section maybe stationer's shop or coffee shop</p><ul><li>Check and add new products</li><li>Watch shopping history of each section.</li><li>Register user shoppings</li></ul><h3>Client / User</h3><p>They are those who use the card. The user can: </p><ul><li>Check the available balance of the card.</li><li>Watch the shopping history.</li></ul><h2>Card simulation</h2><p>The system was thought to be working with a NFC card and Arduino. But this is made through a simulation. In the main page of this role, you can open the simulator by pressing the space bar key. A popup will be opened, so they should be allowed in the browser. This simulator can be used in wherever is needed.</p><h2>Demo</h2><p>Do you want to see a demostration of the app? To login, you can use this data:</p><h3>Seller</h3><p>User and password: vendedor1</p><h3>User</h3><p>User and password: user1</p>",
+        "technologies": [
+            "HTML5", "CSS", "JavaScript", "PHP", "Responsive Web Design"
+        ],
+        "images": [{
+            "imgUrl": "data/img/smartShoppingCard/1.png",
+            "projectName": "Administrator dashboard"
+        },{
+            "imgUrl": "data/img/smartShoppingCard/2.png",
+            "projectName": "CRUD products table"
+        },{
+            "imgUrl": "data/img/smartShoppingCard/3.png",
+            "projectName": "Shopping module"
+        },{
+            "imgUrl": "data/img/smartShoppingCard/4.png",
+            "projectName": "User dashboard"
+        }]
+    },
+    {
+        "access-point": "frontend-php/flashcard-system",
+        "name": "Memory cards. English vocabulary. Feynman Technique.",
+        "github-link": "",
+        "webpage": "http://bermudezwebhost.ga/flashcard-system/?db=3",
+        "description": "<p>It's a very simple application. It's a English vocabulary builder making use of the Feynman technique. Some cards are shown, if you remember the meaning of the word when you turn it you have to press the check button. Other wise you have to press the 'X' button. The algorith inside of it makes sure that the words appear each specific time. It's recommended to be used everyday. </p>",
+        "technologies": [
+            "HTML5", "CSS", "JavaScript", "PHP", "Responsive Web Design"
+        ],
+        "images": [{
+            "imgUrl": "data/img/flashcard-system/1.png",
+            "projectName": "Main page. Sections."
+        },{
+            "imgUrl": "data/img/flashcard-system/2.png",
+            "projectName": "Words grid"
+        },{
+            "imgUrl": "data/img/flashcard-system/3.png",
+            "projectName": "Smartphone view"
+        }]
     }
 ]

@@ -193,5 +193,71 @@
             "imgUrl": "data/img/turisticWays/3.png",
             "projectName": "Página de descarga ingles"
         }]
+    },
+    {
+        "access-point": "frontend-php/proyectapp",
+        "name": "Proyectapp. Blog financiero",
+        "github-link": "",
+        "webpage": "http://bermudezwebhost.ga/proyectapp",
+        "description": "<p>Este es un sitio web pensado como un blog financiero. Permite realizar entradas de blog, poner comentario a cada entrada de blog, hacer cálculos financieros y un formulario de contacto. <h2>Pestañas</h2><ul><li><b>Inicio</b></li><li><b>Blog: </b>Permite mostrar las entradas de blog actuales. Al iniciar sesión, se puede añadir una nueva entrada de blog en esta sección. Al dar click en alguna de las entradas, lleva al blog completo además de la sección de comentarios.</li><li><b>Proyecciones: </b>Permite realizar cálculos financieros. La única función activa es análisis de correlación donde se puede calcular el coeficiente de correlación.</li><li><b>Sobre nosotros: </b>Cuenta sobre el proyecto, su misión y visión</li><li><b>Contactenos: </b>Se encuentra un formulario de contacto. Estos datos son enviados a una base de datos y al iniciar sesión se pueden consultar estos datos</li></ul></p><h2>Demostración</h2><p>Para iniciar sesión puede usar los siguientes datos:</p><br/><p>Usuario: admin</p><p>Contraseña: admin123</p>",
+        "technologies": [
+            "HTML5", "CSS", "JavaScript", "PHP", "Bootstrap 5", "Responsive Web Design"
+        ],
+        "images": [{
+            "imgUrl": "data/img/proyectapp/1.png",
+            "projectName": "Página inicial"
+        },{
+            "imgUrl": "data/img/proyectapp/2.png",
+            "projectName": "Blogs"
+        },{
+            "imgUrl": "data/img/proyectapp/3.png",
+            "projectName": "Entrada de blog"
+        },{
+            "imgUrl": "data/img/proyectapp/4.png",
+            "projectName": "Nueva entrada de blog"
+        }]
+    },
+    {
+        "access-point": "frontend-php/smartShoppingCard",
+        "name": "Aplicativo tarjeta de compras inteligente",
+        "github-link": "",
+        "webpage": "http://bermudezwebhost.ga/smartShoppingCard",
+        "description": "<p>Aplicativo para el manejo de una tarjeta NFC en un entorno educativo (papelería y cafetería). Funciona como una tarjeta débito que se puede recargar y con la que se puede hacer compras.</p><h2>Como funciona?</h2><p>Todo depende del rol que ejerce el usuario.</p><br/><h3>Administrador</h3><ul><li>Administración de todas las bases de datos, creación de usuarios, productos, finanzas. </li><li>Asignación de chip de tarjeta</li><li>Revisar historial de compras</li><li>Recargar tarjeta</li></ul><h3>Vendedor</h3><p>Cada vendedor pertenece a una sección específica puede ser cafetería o papelería.</p><ul><li>Revisar y añadir productos</li><li>Ver historial de ventas de la sección</li><li>Registrar compras de usuario</li></ul><h3>Cliente o usuario</h3><p>Se refiere a aquellos que hacen uso de la tarjeta. El usuario puede: </p><ul><li>Consultar el saldo disponible en su tarjeta.</li><li>Ver el historial de compras que ha tenido.</li></ul><h2>Simulador de tarjeta</h2><p>El sistema estaba pensado inicialmente para funcionar con arduino y un lector NFC. Sin embargo para simular este sistema, se dispone de un simulador. En la página principal de cada rol, se puede presionar la tecla espacio para abrir el simulador. Se abrirá una ventana emergente, por lo que deben estar habilitadas en el navegador. Este simulador se puede usar en las secciones donde sea requerido.</p><h2>Demostración</h2><p>Desea acceder a una demostración de la aplicación? Para poder ingresar, puede utilizar los siguientes credenciales:</p><h3>Vendedor</h3><p>Usuario y contraseña: vendedor1</p><h3>Usuario</h3><p>Usuario y contraseña: user1</p>",
+        "technologies": [
+            "HTML5", "CSS", "JavaScript", "PHP", "Responsive Web Design"
+        ],
+        "images": [{
+            "imgUrl": "data/img/smartShoppingCard/1.png",
+            "projectName": "Dashboard (página inicio) administrador"
+        },{
+            "imgUrl": "data/img/smartShoppingCard/2.png",
+            "projectName": "CRUD Tabla de productos"
+        },{
+            "imgUrl": "data/img/smartShoppingCard/3.png",
+            "projectName": "Modulo de registro de compras"
+        },{
+            "imgUrl": "data/img/smartShoppingCard/4.png",
+            "projectName": "Dashboard usuario"
+        }]
+    },
+    {
+        "access-point": "frontend-php/flashcard-system",
+        "name": "Tarjetas de memoria. Vocabulario en ingles. Tecnica de Feynman.",
+        "github-link": "",
+        "webpage": "http://bermudezwebhost.ga/flashcard-system/?db=3",
+        "description": "<p>Es una aplicación bastante simple. Se trata de un constructor de vocabulario en ingles haciendo uso de la técnica de Feynman. Se muestran unas tarjetas, si recuerdas el significado de la palabra al girarla debes presionar el visto bueno. De otra manera debes presionar la X. El algorimo internamente se encarga de que las palabras aparezcan cada cierto tiempo. Se recomienda hacer uso de este todos los días. </p>",
+        "technologies": [
+            "HTML5", "CSS", "JavaScript", "PHP", "Responsive Web Design"
+        ],
+        "images": [{
+            "imgUrl": "data/img/flashcard-system/1.png",
+            "projectName": "Página inicial. Secciones."
+        },{
+            "imgUrl": "data/img/flashcard-system/2.png",
+            "projectName": "Cuadricula con palabras"
+        },{
+            "imgUrl": "data/img/flashcard-system/3.png",
+            "projectName": "Vista desde celular"
+        }]
     }
 ]

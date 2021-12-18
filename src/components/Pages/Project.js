@@ -15,6 +15,7 @@ export default function Project({theme, lang}){
     let url = lang==="es"?"data/projects.json":"data/projectsEn.json";
     
     useEffect(() =>{
+        setData([]);
         api.get(url).then((res) => {
             res.forEach(element => {
                 if(element["access-point"] === accessRoute){

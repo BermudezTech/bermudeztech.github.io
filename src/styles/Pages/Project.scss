@@ -7,6 +7,7 @@
     margin-top: 20px;
     display: grid;
     grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto 1fr;
     grid-template-areas: "desc slider"
                         "desc check";
     p, ul li{
@@ -30,9 +31,10 @@
     }
     h3{
         font-family: $bebas;
+        margin: 5px 0;
         font-weight: 400;
         font-size: 30px;
-        text-align: center;
+        text-align: left;
     }
     .description{
         grid-area: desc;
@@ -43,6 +45,7 @@
             display: flex;
             gap: 10px;
             margin-bottom: 10px;
+            flex-wrap: wrap;
             > div{
                 background-image: linear-gradient($lightGreen, $darkGreen);
                 padding: 5px;
