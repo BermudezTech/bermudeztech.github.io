@@ -3,14 +3,22 @@ import { helpHttp } from '../../helpers/helpHttp';
 import { NavLink, useParams } from 'react-router-dom';
 import '../../styles/Pages/Projects.scss';
 
-function Project({name, imageUrl}){
+function Project({name, imageUrl, tech}){
     let image = {
         backgroundImage: `url(${imageUrl})`,
     }
     return(
         <>
-            <div className="project" style={image}>
-                <div><span>{name}</span></div>
+            <div className="project">
+                <div style={image} className="project-img"></div>
+                <div className="project-text">
+                    <span className="title">{name}</span>
+                    <div className="technologies">
+                        {tech.map(element => 
+                            <p key={element}>{element}</p>
+                        )}
+                    </div>
+                </div>
             </div>
         </>
     )
@@ -19,7 +27,7 @@ function Project({name, imageUrl}){
 export default function Projects({theme, lang}){
     let [data, setData] = useState([]);
     let { type } = useParams();
-   
+    
     let api = helpHttp();
     let url = lang==="es" ? "data/projects.json":"data/projectsEn.json";
 
@@ -29,7 +37,7 @@ export default function Projects({theme, lang}){
             res.forEach(element => {
                 let projecttype = element["access-point"].split("/")[0];
                 let newElement = [element];
-                if((type === projecttype) || (type === "web-dev")){
+                if((type === projecttype) || (type === undefined)){
                     newData = [...newData, ...newElement];
                 }
             });
@@ -48,7 +56,7 @@ export default function Projects({theme, lang}){
                 <div className={theme ? "projects-box dark":"projects-box light"}>
                     {data.map(element =>
                     <NavLink to={`/projects/${element["access-point"]}`} key={element["access-point"]}>
-                        <Project name={element["name"]} imageUrl={element["images"][0]["imgUrl"]}/>
+                        <Project name={element["name"]} imageUrl={element["images"][0]["imgUrl"]} tech={element["technologies"]}/>
                     </NavLink>
                     )}
                 </div>

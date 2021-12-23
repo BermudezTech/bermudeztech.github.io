@@ -84,7 +84,7 @@ export default function Main({theme, lang}){
                     </div>
                     {(data.length !== 0) && <Slider sliderImages={data} theme={theme}/>}
                 </div>
-                <NavLink to="/projects/web-dev" style={{textDecoration: 'none'}}>
+                <NavLink to="/projects" style={{textDecoration: 'none'}}>
                     <button>
                         <p className="btn-logo">&#62;&#62;</p>
                         <p className="btn-text">{lang === "es" ? "Mi trabajo":"My projects"}</p>

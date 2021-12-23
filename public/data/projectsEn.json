@@ -259,5 +259,28 @@
             "imgUrl": "data/img/flashcard-system/3.png",
             "projectName": "Smartphone view"
         }]
+    },
+    {
+        "access-point": "frontend-php/repertorioliturgico",
+        "name": "Liturgical Repertoire. Catholic Liturgy Songs",
+        "github-link": "",
+        "webpage": "http://repertorioliturgico.ga/",
+        "description": "<p>It's a web where lyrics and chords of catholic liturgy songs are stored. It allows you to see the different songs for each liturgical moment. Each one of the songs contain a guide video, lyrics and chords of the song. The web administrator can upload and add new songs or sections. All this is loaded dinamically through PHP. <br/><br/>Furthermore, it has the option to select the repertorie to be used, using the songs which are available in the list. Finally, it deliver the text in HTML format or in WhatsApp format to send it.</p>",
+        "technologies": [
+            "HTML5", "CSS", "JavaScript", "PHP", "Responsive Web Design"
+        ],
+        "images": [{
+            "imgUrl": "data/img/repertorioliturgico/1.png",
+            "projectName": "Main Page"
+        },{
+            "imgUrl": "data/img/repertorioliturgico/2.png",
+            "projectName": "Songs list"
+        },{
+            "imgUrl": "data/img/repertorioliturgico/3.png",
+            "projectName": "Song"
+        },{
+            "imgUrl": "data/img/repertorioliturgico/4.png",
+            "projectName": "Smartphone view"
+        }]
     }
 ]

@@ -50,64 +50,91 @@
 
 .projects{
     width: 100%;
-    height: 80vh;
-    background-color: rgba(0,0,0,.4);
+    // height: 80vh;
+    // background-color: rgba(0,0,0,.4);
     border-radius: 36px;
-    margin: 2vh auto;
+    margin: 0 auto;
     max-width: 1000px;
     padding: 20px;
     box-sizing: border-box;
-    overflow-y: hidden;
+    // overflow-y: hidden;
     padding-top: 10px;
 }
 
 .projects-box{
     width: 100%;
-    height: 100%;
+    height: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 170px;
+    grid-template-rows: repeat(auto-fill, 270px);
     gap: 20px;
-    position: relative;
-    overflow-y: scroll;
+    // position: relative;
+    // overflow-y: scroll;
+    overflow-y: hidden;
     overflow-x: hidden;
-    padding-bottom: 100px;
+    // padding-bottom: 100px;
     a{
         text-decoration: none;
     }
     .project{
         width: 90%;
-        height: 170px;
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-color: black;
-        background-position-x: center;
-        background-position-y: center;
+        height: 100%;
         justify-self: center;
         cursor: pointer;
         transition: all .2s ease-in-out;
-        div{
+        margin: 0 auto;
+        display: grid;
+        grid-template-rows: 170px 100px;
+        align-items: center;
+        .project-img{
             width: 100%;
-            height: 30px;
-            background-color: rgba(0,0,0,.4);
-            backdrop-filter: blur(6px);
-            position: relative;
-            top: calc(100% - 30px);
+            height: 170px;
+            background-color: rgba(0,0,0,.5);
+            background-size: cover;
+            background-position-x: center;
+            background-position-y: center;
+            background-repeat: no-repeat;
+        }
+        .project-text{
+            margin-top: 10px;
+            width: 100%;
             display: flex;
-            align-items: center;
-            span{
+            flex-direction: column;
+            justify-content: space-between;
+            .title{
+                display: block;
+                width: 100%;
                 color: white;
                 font-family: $roboto;
-                padding: 0px 10px;
-                box-sizing: border-box;
+                text-align: center;
+            }
+            .technologies{
+                width: 100%;
+                height: auto;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 5px;
+                margin-top: 10px;
+                justify-self: flex-end;
+                p{
+                    width: auto;
+                    height: 20px;
+                    background-image: linear-gradient($lightGreen, $darkGreen);
+                    color: white;
+                    padding: 5px;
+                    box-sizing: border-box;
+                    border-radius: 3px;
+                    font-size: 12px;
+                    margin: 0px;
+                    font-family: $roboto;
+                    box-sizing: border-box;
+                }
             }
         }
         &:hover{
             opacity: .7;
         }
-    }
-    .project:nth-last-child(1){
-        margin-bottom: 50px;
     }
 }
 
@@ -117,13 +144,14 @@
     gap: 20px;
     width: 40%;
     margin: 10px auto;
-    background-color: rgba(0,0,0,.5);
+    // background-color: rgba(0,0,0,.5);
     padding: 6px;
     box-sizing: border-box;
     border-radius: 20px;
     .selectorLink{
+        box-shadow: 2px 2px 6px rgba(0,0,0,.5);
         width: 140px;
-        height: 20px;
+        height: 25px;
         border-radius: 30px;
         border: none;
         color:white;
@@ -133,6 +161,9 @@
         text-align: center;
         background-image: linear-gradient($lightGreen, $darkGreen);
         opacity: .5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .selectorLink.active{
         opacity: 1;
@@ -140,6 +171,14 @@
 }
 
 .projects.light{
+    .projects-box .project .project-text{
+        .title{
+            color: black;
+        }
+        .technologies p{
+            background-image: linear-gradient($lightBlue, $darkBlue);
+        }
+    }
     .selector{
         .selectorLink{
             background-image: linear-gradient($lightBlue, $darkBlue);
@@ -158,7 +197,6 @@
 
 @include mediaQ($mediumScreen){
     .projects-box{
-        grid-template-rows: 170px;
         grid-template-columns: repeat(2, 1fr);
         .project{
             width: 95%;
@@ -182,7 +220,6 @@
 @include mediaQ(540px){
     .projects-box{
         grid-template-columns: 1fr;
-        grid-template-rows: 200px;
         .project{
             width: 95%;
             height: 200px;

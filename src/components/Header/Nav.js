@@ -19,10 +19,10 @@ export default function Nav({theme, lang}){
                 <ul className="nav-list">
                     <li><NavLink to="/" className="link" onClick={() => {setActive(false); window.scrollTo(0,0)}}>{(lang === "es") ? "Inicio":"Home"}</NavLink></li>
                     <li>
-                        <NavLink to="/projects/web-dev" className="link dropdown-menu" onClick={() => {setActive(false); window.scrollTo(0,0)}}>{(lang === "es") ? "Proyectos":"Projects"}<i className="icon-arrow-down"></i></NavLink>
+                        <NavLink to="/projects" className="link dropdown-menu" onClick={() => {setActive(false); window.scrollTo(0,0)}}>{(lang === "es") ? "Proyectos":"Projects"}<i className="icon-arrow-down"></i></NavLink>
                         <ul className="sub-menu">
                             <li>
-                                <NavLink to="/projects/web-dev" className="link" onClick={() => {setActive(false); window.scrollTo(0,0)}}>{(lang === "es") ? "Desarrollo web":"Web development"}<i className="icon-arrow-left"></i></NavLink>
+                                <NavLink to="/projects" className="link" onClick={() => {setActive(false); window.scrollTo(0,0)}}>{(lang === "es") ? "Desarrollo web":"Web development"}<i className="icon-arrow-left"></i></NavLink>
                                 <ul className="sub-menu">
                                     <li><NavLink to="/projects/frontend" className="link" onClick={() => {setActive(false); window.scrollTo(0,0)}}>Frontend</NavLink></li>
                                     <li><NavLink to="/projects/frontend-php" className="link" onClick={() => {setActive(false); window.scrollTo(0,0)}}>PHP {(lang === "es") ? "y":"and"} MySQL</NavLink></li>

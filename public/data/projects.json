@@ -259,5 +259,28 @@
             "imgUrl": "data/img/flashcard-system/3.png",
             "projectName": "Vista desde celular"
         }]
+    },
+    {
+        "access-point": "frontend-php/repertorioliturgico",
+        "name": "Repertorio Liturgico. Canciones liturgia católica",
+        "github-link": "",
+        "webpage": "http://repertorioliturgico.ga/",
+        "description": "<p>Se trata de una web donde se almacenan letras y acordes de canciones de liturgía de la iglesia católica. Permite observar las diferentes canciones para cada momento liturgico. Cada una de las canciones contiene un video guía, letra y acordes de la canción. El administrador de la web puede ingresar y agregar nuevas canciones o nuevas secciones. Todo esto es cargado dinámicamente mediante PHP. <br/><br/>Además de esto, tiene una opción para seleccionar el repertorio a utilizar, haciendo uso de las canciones que hacen parte de la lista. Entrega el texto en formato HTML o en formato para envío por WhatsApp.</p>",
+        "technologies": [
+            "HTML5", "CSS", "JavaScript", "PHP", "Responsive Web Design"
+        ],
+        "images": [{
+            "imgUrl": "data/img/repertorioliturgico/1.png",
+            "projectName": "Página inicial."
+        },{
+            "imgUrl": "data/img/repertorioliturgico/2.png",
+            "projectName": "Listado de canciones"
+        },{
+            "imgUrl": "data/img/repertorioliturgico/3.png",
+            "projectName": "Canción"
+        },{
+            "imgUrl": "data/img/repertorioliturgico/4.png",
+            "projectName": "Vista desde celular"
+        }]
     }
 ]
