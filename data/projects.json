@@ -282,5 +282,25 @@
             "imgUrl": "data/img/repertorioliturgico/4.png",
             "projectName": "Vista desde celular"
         }]
+    },
+    {
+        "access-point": "frontend/youtubeHomepage",
+        "name": "Clon interfaz gráfica YouTube",
+        "github-link": "https://github.com/JBermudezG/frontend/tree/master/youtubeHomepage",
+        "webpage": "https://bermudezweb.ga/frontend/youtubeHomepage",
+        "description": "<p>Réplica de la interfaz gráfica de YouTube. Cuenta con un diseño responsive, es decir se adapta a las diferentes pantallas. Esta diseñado con Flexbox y CSS Grid. Estos permitieron la organización de los elementos de manera sencilla. Se tomaron como referencia las imagenes y svg de la página oficial de YouTube para enero de 2022.</p>",
+        "technologies": [
+            "HTML5", "SCSS", "Flexbox", "CSS Grid", "Responsive Web Design"
+        ],
+        "images": [{
+            "imgUrl": "data/img/youtubeHomepage/1.png",
+            "projectName": "Vista de escritorio."
+        },{
+            "imgUrl": "data/img/youtubeHomepage/2.png",
+            "projectName": "Pantalla HD"
+        },{
+            "imgUrl": "data/img/youtubeHomepage/3.png",
+            "projectName": "Vista desde celular"
+        }]
     }
 ]
