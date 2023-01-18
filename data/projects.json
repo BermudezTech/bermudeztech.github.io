@@ -302,5 +302,25 @@
             "imgUrl": "data/img/youtubeHomepage/3.png",
             "projectName": "Vista desde celular"
         }]
+    },
+    {
+        "access-point": "frontend/facebookUIClone",
+        "name": "Clon interfaz gráfica Homepage Facebook",
+        "github-link": "https://github.com/JBermudezG/frontend/tree/master/facebookUIClone",
+        "webpage": "https://bermudezweb.ga/frontend/facebookUIClone",
+        "description": "<p>Réplica de la interfaz gráfica de Facebook. Cuenta con un diseño responsive, es decir se adapta a las diferentes pantallas. Esta diseñado con Flexbox y CSS Grid. Estos permitieron la organización de los elementos de manera sencilla. Se tomaron como referencia las imagenes y svg de la página oficial de Facebook para enero de 2023.</p>",
+        "technologies": [
+            "HTML5", "SCSS", "Flexbox", "CSS Grid", "Responsive Web Design"
+        ],
+        "images": [{
+            "imgUrl": "data/img/facebookUIClone/1.png",
+            "projectName": "Vista de escritorio."
+        },{
+            "imgUrl": "data/img/facebookUIClone/2.png",
+            "projectName": "Pantalla HD"
+        },{
+            "imgUrl": "data/img/facebookUIClone/3.png",
+            "projectName": "Vista desde celular"
+        }]
     }
 ]

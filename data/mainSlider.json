@@ -4,6 +4,10 @@
         "projectName": "Interfaz gráfica de React JS con la restAPI de TVMaze"
     },
     {
+        "imgUrl": "data/img/facebookUIClone/1.png",
+        "projectName": "Facebook UI, clon de la página inicial"
+    },
+    {
         "imgUrl": "data/img/realstate/1.png",
         "projectName": "Figma a HTML. Realstate"
     }

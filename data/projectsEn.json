@@ -302,5 +302,25 @@
             "imgUrl": "data/img/youtubeHomepage/3.png",
             "projectName": "Smartphone view"
         }]
+    },
+    {
+        "access-point": "frontend/facebookUIClone",
+        "name": "Facebook Homepage UI Clone",
+        "github-link": "https://github.com/JBermudezG/frontend/tree/master/facebookUIClone",
+        "webpage": "https://bermudezweb.ga/frontend/facebookUIClone",
+        "description": "<p>Clon of the UI of Facebook. It has a responsive design, which means that it adapts to different screen sizes. It's designed with Flexbox and CSS grid. These allow the easy organization of the elements. There were taken as a reference the images and svg files from the official page in January of 2023.</p>",
+        "technologies": [
+            "HTML5", "SCSS", "Flexbox", "CSS Grid", "Responsive Web Design"
+        ],
+        "images": [{
+            "imgUrl": "data/img/facebookUIClone/1.png",
+            "projectName": "Desktop view"
+        },{
+            "imgUrl": "data/img/facebookUIClone/2.png",
+            "projectName": "HD Screen"
+        },{
+            "imgUrl": "data/img/facebookUIClone/3.png",
+            "projectName": "Smartphone view"
+        }]
     }
 ]
